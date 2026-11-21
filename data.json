@@ -1,7 +1,7 @@
 {
- "generated": "2026-11-21T21:03Z",
- "refreshed": "",
- "today": "2026-11-22",
+ "generated": "2026-11-21T22:04Z",
+ "refreshed": "2026-11-21T22:04Z",
+ "today": "2026-11-21",
  "health": [
   {
    "source": "Real yield (FRED DFII10)",
@@ -21,17 +21,15 @@
   {
    "source": "Gold price (Stooq)",
    "ok": false,
-   "detail": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)>"
+   "detail": "ValueError: too few price rows"
   },
   {
    "source": "News headlines (Google News)",
-   "ok": false,
-   "detail": "ValueError: no news feed answered (<urlopen error Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)>)"
+   "ok": true
   },
   {
    "source": "Fed releases (federalreserve.gov)",
-   "ok": false,
-   "detail": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)>"
+   "ok": true
   }
  ],
  "info": {
@@ -297,6 +295,217 @@
    "note": "The end of a parabolic run. Gold had gained nearly 65% in 2025."
   }
  ],
- "headlines": [],
+ "headlines": [
+  {
+   "title": "Gold Breaks Down but is This a Sign of What’s to Come? - StoneX",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOVEVJZDNBZS1OLW92S0hGaURiVTUxZkNicmhHYjZxN3VQbnZhQlgyVEFTb2hGQTFPZUtmYVg1Sk5aRXU2UU1aYUN2ZjBZRUxMeUFGRWx6c2w1dVB0SmQ3ck4wVE92aDNhQXBZNnNCcXN4MGxPS2JZd1NkS1MxWmN6NlRjc2Jra0RlWTlickROVVBpS0t6dW44eFdCOUhKMEd2Yk1z?oc=5",
+   "cat": "Fed",
+   "source": "StoneX",
+   "when": "2026-11-21T20:03Z"
+  },
+  {
+   "title": "Gold Price Today | Price of Gold Per Ounce | 24 Hour Spot Chart - Kitco",
+   "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBnU2dTNUduLWh4WmxVQy1ndS1jN01abVlCeTNTMnFMbFdmS1d6TnFCekxTZVlXNGtKdnNRN3plT00yZm5LQmh6Rg?oc=5",
+   "cat": "Macro",
+   "source": "Kitco",
+   "when": "2026-11-21T18:55Z"
+  },
+  {
+   "title": "Gold’s slide deepens as AI rout, rate-hike bets hurt bullion - www.daily-sun.com",
+   "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9EeVdVNTlQYmJsSk41a2lCN1M0UFphSTZOdkFUSHlIUXhwYmR6a3JsUnJUYktPWnpXN1lMTkNVdWcwaHJKdHJ6bmJWMEl6Sl9yZVZ4cE9GS1JEN1U?oc=5",
+   "cat": "Fed",
+   "source": "www.daily-sun.com",
+   "when": "2026-11-21T18:00Z"
+  },
+  {
+   "title": "UBS flags further gold weakness before Fed rate-cut expectations return - Investing.com",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOUlo5dHE1SWxqV19SaFYxVEl2OFZ0a0lsTEw2Tjc5anRmZHBxaWp6QUEybWpnTk1Kci01YkJrWkpxb2VVaEFCWG1uaU9zY1J5eDh1UHdzai1TdVlNYm44TldXOFdHTFk3YVhrVGFrcmJSeWpWd0Zic1pIanRZVmpIcDlCQVkxZUZEeUlPZXpZQXFoOHlNd21uWEF3OWFhUExjSVk2VFdDS2QtU2JVR05BSGZ1Ymt2UkpsbHQ4eGc0MGw5d0oz?oc=5",
+   "cat": "Fed",
+   "source": "Investing.com",
+   "when": "2026-11-21T17:52Z"
+  },
+  {
+   "title": "Gold prices have fallen nearly 37% in 10 months; what could push prices down further? - Vietnam.vn",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOZFpDRkZHVzRtVGFuVEpRNHpDU0pVRkZIMzRSSWdEcDRoYy04ZzJyd1hseW9lV2RWNXVISWVzbVZFbmFOY0pkV1pnNG5xT2VlQ2hUQnF2ektTRVV3aVJjN1NWakZOdTZYZGNpQmNfMnhQRVlZa3I1RVVyX3h1UVRPbXZlaEd4WlF5bkV5aElxQ0dJeGVBM0hJdnJn?oc=5",
+   "cat": "Geopolitics",
+   "source": "Vietnam.vn",
+   "when": "2026-11-21T14:41Z"
+  },
+  {
+   "title": "Gold Declines Amid AI Stock Sell-off and Interest Rate Hike Bets - صحيفة مال",
+   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9iVjlRQllwNzIwYndXVUF0N2RaVFI1SlpMUG1JSmFxcFltNGxXWDZ2d0hhb1htSzViVnZmVnFMRXpWMHFxd1dJcW16UlpUb2YtUkZweDF6QnVEaE01V0wycy1TeW9rY0NIOFk1Nw?oc=5",
+   "cat": "Fed",
+   "source": "صحيفة مال",
+   "when": "2026-11-21T13:14Z"
+  },
+  {
+   "title": "Gold and Silver Lose $15 Trillion in Value as Rate Fears Batter Safe Havens - BigGo Finance",
+   "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE43dXZTYVJrM0pWOF9ieXFkS2NYNTVndHlodV9nOVpES1lLZ2VVY0V0REx3aS1UQWptVU9UbzFRMFlhRkxnWlFaeTNldU9QYlJDUkFybE1LY29TUTNmWEtsUm9OdVJ2aUNqNnJrb1lqdVhlUUpnZmc?oc=5",
+   "cat": "Fed",
+   "source": "BigGo Finance",
+   "when": "2026-11-21T13:05Z"
+  },
+  {
+   "title": "Gold prices plunge in Pakistan, fall by Rs3,500 per tola - ARYnews.tv",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1xR2xwWmMxMzVYWnBzNDJIam1JcVhrMFFGbEZKTXBRVjNFQzh4TC0xV1U2ZWhVSGxXM01uOVdfT2hCZldyVC1SY0VqUWpBR2FTWGRmc1NRcjJBSW5teE16TUQ2eGdmWWxESW1ldGZ2Vi1YWHRSOG9Jd2pKLXVYc2c?oc=5",
+   "cat": "Geopolitics",
+   "source": "ARYnews.tv",
+   "when": "2026-11-21T12:30Z"
+  },
+  {
+   "title": "Expert Explains Why Gold Fell Despite Wars, Rally Outlook - Sada Elbalad English",
+   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5FTzA1QVF4WVBOQTJWaHA1UXFENlRLa1BQVGFRSHpnRmxGY3hOTlBILWRFVld3RmdKaE9EaXExc3d3ZndGakF2RVNJWDN3WEJ2M3NOa3NGb2dWdGpXRlRyb0JGVWZzUk5sazREWGN1endKMUNQTjU3Nmpvak5tUQ?oc=5",
+   "cat": "Geopolitics",
+   "source": "Sada Elbalad English",
+   "when": "2026-11-21T11:27Z"
+  },
+  {
+   "title": "Gold Heads for Biggest Weekly Loss in Eight Months as Fed Rate Hike Bets Lift Dollar and Yields - Tekedia",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOcjJUZ2k5bnFuMFlfYXJxZDhqYnVWUlU0cmVRdlUwV3ZkV0htS1AydzhPajN5UHNMNXA5Q3ZhTFVnemNGdFh0ZzU3YmxIRHBzd2dDSWdtU1A4NXB3T0FjYkVkYWpaZU5uU0xJSXJLbG1BY1k5czlSNWI4aUdhNl9mQ3d3RWxQVzh5ZVVPVVRCYWItOTV2Sy1EZ045YWdqbE9kTXB6Y2ptZGp1VnI2SlYzUVpGRjFPVzZYaG9uZA?oc=5",
+   "cat": "Fed",
+   "source": "Tekedia",
+   "when": "2026-11-21T10:59Z"
+  },
+  {
+   "title": "Gold prices crash nearly 10% in a week: Mega reasons behind massive yellow metal rate fall – List - Livemint",
+   "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNdkRNVGdWWEcxbEI2empjUWVmV1NtOGVVRVZJV0Zra0hLMlJXX1NrTHo2U1ctNnRaUTJKNFV5cHBmaWRsRXVXSnpFaXJIUFlNcjdzc1RsWWY2aUUwSDBoYzVEZ2Q2dktsZUtId3k4UkxlMWRkNTFVdC1ObC1pS1BiNmJ1VVd2NXNPLVpaTW9RN0ZOZ1VDUXJUU2ljeURDWFVkWGI1WUlKbmNuVTdVbHZTZExkVmZpTHFyajVQNWswZ0o5Z2Z4Q2VKOFJ4bml2aHpUSWw5bW9iYnVUb1JlekFac01QN0ZZNEpORE9DaW1kTW91X3PSAfgBQVVfeXFMT1JQLWZPS0NLcEE4R2JtSC1lTmNHVFZ6NFhsR0VQcXVBSGRYWFY3M2JSS1ZJNlZ6U3VaWEdvMF9XWlhQa1ZQZnJhWExMN25pTjN6TXpMZ1JvdkliamliSWxja2xZUm1ZVFphbi1BZnRpVS1hU3haYUIxZ0szMV90RXkyZ2VEVjVYRXFuTjMySFRQc0M3SWk5czRvbnR2R1doTTZkS0M0U1Jpb3dIMDZYY09fXzFkRGJaanNfdjlLdjJOOF9oempjRmt2Y0RvUkZ3dWI3U3NNRW1oNjFuaDYtWE5OaVpOTXYzeGd5RUtJVDhORWhnd3E0SUY?oc=5",
+   "cat": "Fed",
+   "source": "Livemint",
+   "when": "2026-11-21T09:27Z"
+  },
+  {
+   "title": "Gold plunges nearly 9% this week on hawkish rate expectations and stock sell-off - 联合早报",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQNjNIQ3hySm8wVmV1Zm9RcHRnSU5nRUNkVk1BRFFSVWtVYjhnbW1aQUtVeWFFWnBVaWgxMXJtRlVJMmw0b2VoZ1hWT2FzSHhTVzgxalYtRF9Yc1NidkdBMHpKdDJIcGhGVnJqdE9CMG53VXpIYnJlb0Jwc3RNaU55TDRnY3Z3SHBMTjFoMUtMNTQ4MXNvSVNiQ2dWczNaNV9tSHY3TUhvRE1xUzdOWEpN?oc=5",
+   "cat": "Fed",
+   "source": "联合早报",
+   "when": "2026-11-21T08:53Z"
+  },
+  {
+   "title": "Gold plunges 9.4% in a week to a 14-month low - IDNFinancials",
+   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOdWpCckZjWS12STdEOG51WDI2dnE0LW9XRkU2aXBCd21LOTJnbkc2TW1LcW5UVTF5M1ZlSE1rSHk4QlR0NnZCbXFvbm1yazQtbkUzaTM4VGdicDhGWE9ScjRFRDd2VU9jTVFpQ2tVT2s1S0pGRmRncGRlLWZ6eW5qa0tLb3JrTjFMeUVaRnpR?oc=5",
+   "cat": "Fed",
+   "source": "IDNFinancials",
+   "when": "2026-11-21T08:30Z"
+  },
+  {
+   "title": "Global Gold Price Falls Below $3,550; Chinese Brands Cut Per-Gram Prices of Pure Gold Jewelry by More Than 20 Yuan - BigGo Finance",
+   "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBTenBVV3U2cW5Fa3Nta1VwcTlqdEJ2dzNZdjRvNGNWWUR6YmN1bWFRb1I2RHZfbHlPUWpjX1N2QjdscmliZWZqYWxobUNGN2lNSVFGcDVkWU8wQjFTX2YwUExHMkhJQUUwaVhOTS1CSC1VZE5CaXc?oc=5",
+   "cat": "Fed",
+   "source": "BigGo Finance",
+   "when": "2026-11-21T06:55Z"
+  },
+  {
+   "title": "Gold Rate Today, November 21, 2026, At ₹1.25 Lakh: How Much Further Will Prices Fall Before New Year? Check 1 Key Factor That Could Change The Trend & State-Wise Rates - Jagran Josh",
+   "link": "https://news.google.com/rss/articles/CBMizwJBVV95cUxQX3JSdXpwT2pZSnJmckZtT3BabjRyMFlnMjN6b2ltcFVpYnJZdGFvQ3FsTlRSbktBdDhjcWpvZ1V0VFAwZzhUd09FZ1RVZ3VIX0J2RzY2X3JLdlVjeERMN0Q2Mmk4cWRTY2V2S0FIQUxkUHFiblNOekhvSFZ0Q0kwQ1VjRTlIQXh6UVhheGxweGI2anY5eFM5a0U2SmNrOTMtMzJaamFERlNnaDFaaEFoT2o2MnBwUkZ0S1FRWVE1all1UXliM2cxYWVBRE8zVHBHSzFYYzY1b3plak9jSjctVGNqRFNwNGNUbnNNc19oM2F3YTNlejZQdC1lTmUyT2NfY2pYTHVVVDM3cnVjRkxYam1YUEppUkpTOWs3YjF6UmlmYU5ydHF4ZjBsVmdnb1p6SzZudWdUTW5EZXRZc0lGcXRZSGkxZnhDRG9mNENxVdIBzwJBVV95cUxQX3JSdXpwT2pZSnJmckZtT3BabjRyMFlnMjN6b2ltcFVpYnJZdGFvQ3FsTlRSbktBdDhjcWpvZ1V0VFAwZzhUd09FZ1RVZ3VIX0J2RzY2X3JLdlVjeERMN0Q2Mmk4cWRTY2V2S0FIQUxkUHFiblNOekhvSFZ0Q0kwQ1VjRTlIQXh6UVhheGxweGI2anY5eFM5a0U2SmNrOTMtMzJaamFERlNnaDFaaEFoT2o2MnBwUkZ0S1FRWVE1all1UXliM2cxYWVBRE8zVHBHSzFYYzY1b3plak9jSjctVGNqRFNwNGNUbnNNc19oM2F3YTNlejZQdC1lTmUyT2NfY2pYTHVVVDM3cnVjRkxYam1YUEppUkpTOWs3YjF6UmlmYU5ydHF4ZjBsVmdnb1p6SzZudWdUTW5EZXRZc0lGcXRZSGkxZnhDRG9mNENxVQ?oc=5",
+   "cat": "Geopolitics",
+   "source": "Jagran Josh",
+   "when": "2026-11-21T06:13Z"
+  },
+  {
+   "title": "Gold price continues to fall as AI selloff, rate-hike bets weigh. What’s ahead? - BusinessLine",
+   "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQNEZXNkJwRG5PRkY1U0w3TnR0Z0hYNXhxU2NEQURCeGpSTG1VUUlLOFhGcFpyaVNBMy1DaWVuSEJRaU13eVZvQXJTcGJXZ2p2al9nQnJQTmxnNjFLTHZWTFJjYkpuZXJFVElHeVVCb3VrQTU5MEhya1FIU1QwWk1OWUZsWGNkaGdfVkd4cnBtNENyVmZydXZhOHZfb1JmSjJjRGxrdERoZl9Jd3dYeVdFZlQtd0M3cFRhR2R5OHFjQVRwbDEyWVJOUkhEYU9ISHgyZjNMSmQwMjRaM1dnN2fSAeQBQVVfeXFMUENlMlBzODVGdlF2ZkZ6UUNhMm9NcEk1eHFCX1Y5Q1J5LWhFbVN5NXNNRmg0UVVvYmRkT01Qdk5rMUVrRms0MzVzS0ZjZ05YQm9UZ21NZFZGTW9DcnV6dGRPRVpIQ01XSDJ0ZXViNlNZd1JVYzR6NTY3dEtOcUZFbnpCMDlvcVBhV1F6eTFDNE1UbGdrZWNPV2NnWkpjd2RRYVctaXViVG9FWXFaZEtjUHV5NjdpenI1b3pKVTJmVDhabFpQdmxDdTNQN3poYTBKWUN5OGlodE9mZ0FpY3lHM2RIVy1Z?oc=5",
+   "cat": "Fed",
+   "source": "BusinessLine",
+   "when": "2026-11-21T05:20Z"
+  },
+  {
+   "title": "Gold and Silver ETFs Drop Amid US Rate-Hike Concerns - India News Network",
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQeVFUNjZKYXJ0d3NLWGR6UDg4dzJnTFNzM0xRaHo1TkZBcFJJLTlYc1ZzQ3pzYVVOSTlqNW5La1Z4SFBRVWhCQlNoSU0yVnRsTS1scmo0WUZpSkN3ZkxOUGJyZVE5V19TR3FKWlFZYmtCS2dJUUp4eGZOUE1fRWk2NUl3RWJ2ZEZJd2ZSM000MDl2VVBSYnRwcw?oc=5",
+   "cat": "Fed",
+   "source": "India News Network",
+   "when": "2026-11-21T04:50Z"
+  },
+  {
+   "title": "Gold Price Crash: Why Are Gold Prices Falling So Sharply? 6 Major Reasons Behind the Sudden Downfall - theopenpress.in",
+   "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPVDl2LVlQeS0wVkVtQ0wzTi1rcWhYd1dBZlNPdVpHSDBpMU1xSkwzUnk0d2NlMmFEX1ZvcTFzOXBhbDZIMlA4dGpiOWZibF9kcVh6S3phX1BadEZfY1BTWVl1eGxBR3lSQm5RV08yYkhuVGxWSmRlaExadnhNeXV1UTdYZWpOMDQ?oc=5",
+   "cat": "Macro",
+   "source": "theopenpress.in",
+   "when": "2026-11-21T04:47Z"
+  },
+  {
+   "title": "Fed Rate-Hike Expectations and Stronger Dollar Send New York Gold Tumbling Nearly 5% in a Single Session, Breaking Below $3,550 - BigGo Finance",
+   "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9MQ29qQ2syYzJKOS1GdkwzUU9Hd21PR2dNMVRvalhzZXdmakZWampYSWxvMnJBTFBrd3pnVUdyLUthWDBMZEQ0M2l2X2ZVMTBpazYwUVF1NVJqczhtUExzYkxkWmZUQzhfdzJYS0tCbTJ1UUhQakE?oc=5",
+   "cat": "Fed",
+   "source": "BigGo Finance",
+   "when": "2026-11-21T03:05Z"
+  },
+  {
+   "title": "Gold Weekly Review: AI Stock Crash Combined with Rate Hike Expectations Sends Gold Prices Plunging Nearly 9% in a Week, Marking Largest Drop in Eight Months! Hits 14-Month Low - Moomoo",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOMnYzeHdnbjFYVU9HR3BLQWdMdkNJbEJMMXY3RTJEWWE1ajFjUHJfdmtNTV9oSmhBVzBpbGVISVlWaTdzRlhETkN5SXduUlE3RjFKRUpVRzJrc3o0UXBiOVEzRG8tcEtnQy1IOTNCalR4RkpwZmhmRkhSanprbndha0hxZl9YLWhUNExzd2pkN2JtT0RXZUFHeXZnZ2Nqb2lyaXdr?oc=5",
+   "cat": "Fed",
+   "source": "Moomoo",
+   "when": "2026-11-21T01:41Z"
+  },
+  {
+   "title": "Gold, Silver prices plunge to fresh lows amid US Fed rate hike fears - The Times of India",
+   "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNWktKczR5dFI3M3pQMFdVa1Q0NFUxR2hLV0NJMG5ZREkwejh4REZTTGxTVEZvMmlEbzR6YlNZSHIydDNEYW9yUXlPeG5FUThURkhyamt5TFl5ZGJEb1R6VGpDSWduX3JKOWdBaDlySGN0UDI5T2duU1ZKVjZyaEVBV2NaYWIyOTBkbzZDNzFfTVl2Q2RiSnA5aTRZT3A4NnZ0Ym91VXBhbUNpUU9fWlJDRVNGeC0xWGdlZGNYQ2YxVFhkNU9OeW9aZFRYbS0zdFo1MnNFeHBuV0xmZ2lj0gHiAUFVX3lxTFB1RTZMOGVmY1hXT05FQnplX3ZpRmtGMzBfaS1kWWdxN2s4N3dtSFFvaENRdXJuUkFpUW1EUmd2M1owV1gxeTFRNW44TUxqQ0N4ZXRxcWN1M0JjQ3l5WTlXcUJVMnJQWlM3d2ZucVgxRTdCZ0MtTmp1WkdBS083aUdVT1FtVjQ0Vkc0eldxWnozQjFyZGswdU1PWm5wSm45Ny0ySDNjeEE1WlA2U2dFMzl6Vm1RSGpHNThjNlNscjlJYkN4bHcxa1ZHd20tRnk0TUg3aTBPUEFTU0p6YkRUS3ZoTFE?oc=5",
+   "cat": "Fed",
+   "source": "The Times of India",
+   "when": "2026-11-21T01:38Z"
+  },
+  {
+   "title": "Gold hits 14-month low on AI stock losses and Fed rate hike bets - Nation Thailand",
+   "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5pSWg2ckx4X21JVDQ3am5UeFZ6QmNNazVMbW1HMkJza2J4SlNmSlhwMTRJU1EwM1lMUm5xTWhEWTZZb0VCMWFtazJqMGNJSV9udTRjeE92X2EwUEVhbjlBelFVRENMS2xXQldnRy1HWHRhM2UwVFE?oc=5",
+   "cat": "Fed",
+   "source": "Nation Thailand",
+   "when": "2026-11-21T00:17Z"
+  },
+  {
+   "title": "Gold price fall nears $3,500: cost and capex pressures for mine planners - Geomechanics.io",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPTmc0NklkLXVFcFkzMzQ2RGRqMjdSTk1QNk0wZDhIWVN0TnJEVnlUaWlieXpDU1lGb21aQjJTaVB2aHpzcG16Q0xLYVRJVW5icVdvNW91M0JXMWRaM3JEQm9IcTAwbEw0M19wVjhhcTB4Vk9ab0dUekllb0FEcUMyUkNvY1ktN19yNEgwb25DTEFLUzFoc2F6X3ZfQnAxYWs0d3ljSTFjZHpWWXdPWWlj?oc=5",
+   "cat": "Fed",
+   "source": "Geomechanics.io",
+   "when": "2026-11-21T00:01Z"
+  },
+  {
+   "title": "Have gold and silver prices hit a bottom? Why I don’t think so - The Financial Express",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNWndQc0l6bTZyNFhsZ1RUNFNSZldmcG1fQ0J4R0RUUm90VHljR215LVhSdUZyUGlsQ2F4elNqR3N1RC10U1lmWWJma1poWFp3M1VxQWNtdklzTEt3R0djOGpBUUtyajN2QmJmaWZld04yS0ZsLUc5N28xUzFtTWVjeUxfY3RWd1dGcXdWVE9nT3lFSmhtRWNnc0lzUzVCeVZ5V3Z1X2FNaUZacWtOYm1qejdPdmxYVWJTTTY3UdIBwwFBVV95cUxQUlZDN3Exd245ZG1aNFJnUE9Ba2oxRDhYTVpEY3A3RExPYjdwczA0Y3Zhbk9JaUtoMndSaHlYQlk0eDVuT1d0YVVpaDl5RkFmTjVLSWQ0X243ZHVFTUhyWDQzZUs3bkExcWVOWFpnb2J1Mmw2OVpCaVF3VWY0NmVfMDJ1Yi13QzhEVlY4VjdUREVtS2V2Y3kxMGZ4OEtWNHEtUjJhTlpRVFpaTFFDaE1lUlRpanN6WVJqVGJSQkx2WTBjdXM?oc=5",
+   "cat": "Macro",
+   "source": "The Financial Express",
+   "when": "2026-11-20T23:35Z"
+  },
+  {
+   "title": "Gold Takes a Beating as Hawkish Fed Sparks Worst Week in Eight Months - Yahoo Finance",
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOdHRqR1J2alFiOXd3Y2tteUlQenZGRXhiVlR2Tk4xSEVSTUd5Q2pwV2lMcmpvYm1uWFAzTWZ1T2lsYkZEczNGZlVsOGhTZW5zMXl6Wkg0Q1ZtcV9sd2t6YzQ3Ri1tejZtbUlFYVdObWNJZUU1N19GR3V6RkxTWi1QbXNnVHVuUmdtLU5hQjdyeklTSTB0cUludHFvWGtod2RvaXc?oc=5",
+   "cat": "Fed",
+   "source": "Yahoo Finance",
+   "when": "2026-11-20T22:56Z"
+  },
+  {
+   "title": "Gold, silver end worst week in eight months but some analysts see signs of a bottom - TradingView",
+   "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNcjlmMVZPRTRyTjdsX0ZreXFMUEI2MkpFZnlPOVJzdFpFUTlRNk1WZENhNTAwRXc5ZlBFcS1yMXA5SjF6cl9LcGxVU0tDTzd3bjhRaFppT1c4SVJIZGpUQ2FmcnphaTVfcnVKenZIZWFWU3EzZTZYV0tBaThmQnUwYzJ2ZFhZTmdIbHAwVWZoQU5mank4dHBvMnBGTVJ2ZGx2ZGd0amgtWk1xQ2drTFFybndJT2YzSzQ3R2R6cWVCZ0xrRHBKTWtPbWwyVGhyZFpKWnBMc2xKOFZ6RHI2ckE?oc=5",
+   "cat": "Fed",
+   "source": "TradingView",
+   "when": "2026-11-20T22:50Z"
+  },
+  {
+   "title": "Why are stocks, gold and bitcoin all falling at once? Rate-hike bets and forced selling - Nacionale",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQR2JtektVd3lDamk0Q0ktZXBialRlOGZTaHNkbE1vcEIyRjdLVFNyQXRtZlJBT014ckYxSzNjMUhoekhMcjdtNnloVHFjenNLa2U3dUtwTXVVazh4bkhsWFZMQTB1U1ZYRDdOR2FEZ2RGaTdIWmdoNGVOZUdMOVgzMU9HUkttc1FSZ1BxUjAwaEJMYklFb2w0WmtEU3BjN2pSV0kwdHVRVkRkRGFXSTdqVnBRSE5oQi0wU2RzMkotcw?oc=5",
+   "cat": "Fed",
+   "source": "Nacionale",
+   "when": "2026-11-20T22:41Z"
+  },
+  {
+   "title": "Wall Street stays bearish after gold’s slide to $3,500, Main Street pessimism deepens ahead of holiday week - Kitco",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPMzNZSEhWdkUzUk5sejZ4cDNvV3YyZ1I5d1RSUFdrLXNILVZIS1RmZU1ROTE3RG5fZllqc2lZNzh0UkpyYmk1Uk5GUjlxOGVxdW81WTdsRFZzMlpQdkJNUjhLM1EwZlg0Y2ZXb0VJLTB6U0FtMjlxVUF2UkFGNEVYNWZ1THNBM1cxTkxCd2hUY3Y3ckRrUE9zZFpkbHphdkN0aDhWOE5LT1RwMTFYRVVLeE05Ti1remM?oc=5",
+   "cat": "Fed",
+   "source": "Kitco",
+   "when": "2026-11-20T22:26Z"
+  },
+  {
+   "title": "Gold Set for Worst Week Since March on Hawkish Fed, AI Selloff - Bloomberg.com",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNRkRDQWZYNXlObXhXM0Q1TEFtSXhxV24ySVdMUnNCVWRRSnJDTkVBLWtJR1lTWEliYzRIbWhWeEFRYzUySHFObzRJajNFWW5wd2lmZ0tIeXpQaFZfdlRZaFJEUTdRVkFKUW1HNDZ1dWhXU1QzSFpIOF80MUJkSWJsdTY1ME9CRUVVYVY0SllFVFYzR0pVVER4YjVSNGp6Y2tIR0ZSRW5yS1VHSHV2OU9MU2lB?oc=5",
+   "cat": "Fed",
+   "source": "Bloomberg.com",
+   "when": "2026-11-20T22:12Z"
+  },
+  {
+   "title": "Public Housing Can’t Solve a Housing Shortage - SchiffGold.com",
+   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPbll6SEZ5dUV3c0JFWkQ3Q3g3OGF1MkUxNGxUdTIzbWdtNFlQUDFiZWxYbU0tM3F0RUZxaDNUN3BpRmJQT0lsZlhTSnRVaVVMYnloaWNnRWxOT1pGUVE1aVRvVDd2VllyU0daR1AydGRTd2xfZERsQmEySG1BMHdaQUNRRzU4cjZHbkl5WXVMdlhBcWZT?oc=5",
+   "cat": "Geopolitics",
+   "source": "SchiffGold.com",
+   "when": "2026-11-20T21:28Z"
+  }
+ ],
  "series": {}
 }
