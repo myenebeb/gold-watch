@@ -1,0 +1,92 @@
+{
+  "_help": "This is the one file you edit by hand. Everything else is automatic. See README.md.",
+  "info": {
+    "record": 5600,
+    "recordDate": "Jan 29, 2026",
+    "low": 3513.54,
+    "lowDate": "Nov 20, 2026"
+  },
+  "cycle": {
+    "phase": 4,
+    "note": "Gold made a base near $4,000 in June and July, rallied 13% in August, then broke back below that base. That means either a second leg down inside phase 4 or a new capitulation (phase 5) that is not confirmed yet.",
+    "updated": "2026-11-21"
+  },
+  "signals": [
+    {
+      "id": "real-yields", "order": 1, "name": "Real yields (10-year)", "auto": "real_yield", "series": "real_yield",
+      "watch": "The yield failing to make a new high, or starting to fall. Analysts such as BCA Research call a peak here the marker of a gold bottom.",
+      "fallback": { "status": "bearish", "reading": "Rose from 2.66% on Nov 9 to 2.88% on Nov 18.", "updated": "2026-11-21" }
+    },
+    {
+      "id": "dollar", "order": 2, "name": "US dollar", "auto": "dollar", "series": "dollar",
+      "watch": "The dollar rolling over, as it did briefly after the US midterm elections.",
+      "fallback": { "status": "bearish", "reading": "Near a 19-month high on Nov 19.", "updated": "2026-11-21" }
+    },
+    {
+      "id": "fed-path", "order": 3, "name": "Fed rate path", "auto": "fed",
+      "watch": "The tone after the Dec 9 decision. Any hint that hikes are ending or pausing would ease the pressure.",
+      "status": "bearish",
+      "reading": "A hike on Dec 9 is almost fully priced in. The October minutes pointed to more hikes, and Governor Waller backs tightening.",
+      "updated": "2026-11-21"
+    },
+    {
+      "id": "china-central-banks", "order": 4, "name": "China and central banks",
+      "watch": "The next monthly China reserve release and the World Gold Council's central bank data. Steady buying acts as a floor under the price.",
+      "status": "neutral",
+      "reading": "China's central bank added about 20 tonnes in July, its biggest month since October 2023, and central banks bought roughly 289 tonnes in Q2. No newer China figure has been checked yet.",
+      "updated": "2026-11-21"
+    },
+    {
+      "id": "etf-flows", "order": 5, "name": "Gold ETF flows",
+      "watch": "Several weeks in a row of net inflows in the World Gold Council data.",
+      "status": "bearish",
+      "reading": "ETFs lost $1.21 billion in the week to Oct 23. July had brought $3 billion of inflows, ending two months of outflows.",
+      "updated": "2026-11-21"
+    },
+    {
+      "id": "positioning", "order": 6, "name": "Speculative positioning",
+      "watch": "Futures longs flushed out and the options skew moving back toward calls.",
+      "status": "bearish",
+      "reading": "The World Gold Council says speculative positions still need further clearing. Options traders are paying less for call protection relative to puts.",
+      "updated": "2026-11-21"
+    },
+    {
+      "id": "stock-stress", "order": 7, "name": "Stock market stress",
+      "watch": "Stocks stabilising. Forced selling usually fades with them.",
+      "status": "bearish",
+      "reading": "Asian shares were heading for their worst week since 2020 on Nov 20. Investors are selling gold to meet margin calls, so gold is falling together with stocks.",
+      "updated": "2026-11-21"
+    },
+    {
+      "id": "price-levels", "order": 8, "name": "Price levels", "auto": "price", "series": "gold",
+      "watch": "A move back above the broken $4,000 area would be the first sign the downtrend is ending.",
+      "fallback": { "status": "bearish", "reading": "Spot hit $3,513.54 on Nov 20, the lowest since September 2025. The June low near $3,955 and the $4,000 level have both broken. Analysts name $3,500 to $3,600 next, and some warn of $3,200.", "updated": "2026-11-21" }
+    }
+  ],
+  "events": [
+    { "date": "2026-12-09", "cat": "Fed", "impact": "mixed", "headline": "Fed decision, a hike is widely expected", "note": "A December hike is close to fully priced in. The tone of the statement and press conference matters more than the move itself." },
+    { "date": "2026-11-20", "cat": "Price", "impact": "bearish", "headline": "Gold hits $3,513, the lowest since September 2025", "note": "Worst week in eight months, down about 9%. Silver, copper, stocks and crypto fell too." },
+    { "date": "2026-11-20", "cat": "Macro", "impact": "bearish", "headline": "Asian shares head for their worst week since 2020", "note": "Forced selling is spreading across assets, and investors are selling gold to raise cash." },
+    { "date": "2026-11-19", "cat": "Fed", "impact": "bearish", "headline": "Fed October minutes point to more rate hikes", "note": "The dollar reached a near 19-month high. Governor Waller said the Fed must respond more aggressively to inflation." },
+    { "date": "2026-11-18", "cat": "Macro", "impact": "bearish", "headline": "10-year real yield reaches 2.88%", "note": "Up from 2.66% on Nov 9." },
+    { "date": "2026-11-10", "cat": "Fed", "impact": "bearish", "headline": "Waller backs a December rate hike", "note": "In a London speech he backed a 25 basis point hike. Yahoo Finance reports he has since argued for a larger one." },
+    { "date": "2026-11-10", "cat": "Macro", "impact": "bearish", "headline": "October US consumer prices rise 0.4% for the month", "note": "A hot inflation print that strengthened hike expectations." },
+    { "date": "2026-11-06", "cat": "Macro", "impact": "bearish", "headline": "China gold jewelry demand falls 33.9% over nine months", "note": "Year on year for the first nine months of 2026, per Xinhua as reported in early November." },
+    { "date": "2026-11-04", "cat": "Macro", "impact": "bullish", "headline": "Gold bounces about 7% after US midterm results weaken the dollar", "note": "Reached about $4,136. The bounce faded within two weeks." },
+    { "date": "2026-10-30", "cat": "Macro", "impact": "bearish", "headline": "Gold drops about 3.5% in one day as the Nasdaq falls 2.9%", "note": "A sign of forced selling: gold sold to cover losses elsewhere." },
+    { "date": "2026-10-28", "cat": "Fed", "impact": "bearish", "headline": "Fed holds rates on a 10 to 2 vote but leaves the door open to tightening", "note": "Markets then began pricing a December hike." },
+    { "date": "2026-10-23", "cat": "ETF flows", "impact": "bearish", "headline": "Gold ETFs lose $1.21 billion in a week", "note": "World Gold Council data for the week to Oct 23." },
+    { "date": "2026-10-23", "cat": "Price", "impact": "bearish", "headline": "Gold breaks below $4,000", "note": "A widely watched support level." },
+    { "date": "2026-09-28", "cat": "Macro", "impact": "bearish", "headline": "Gold falls 4% as the 30-year Treasury yield hits a 24-year high", "note": "Spot reached about $4,111 intraday, then recovered 1.6% the next day." },
+    { "date": "2026-08-31", "cat": "Price", "impact": "bullish", "headline": "Gold ends August up 13% at $4,563", "note": "The third-best month in 25 years, per the World Gold Council." },
+    { "date": "2026-08-07", "cat": "Central banks", "impact": "bullish", "headline": "China adds about 20 tonnes of gold in July", "note": "Its biggest monthly purchase since October 2023. Global central banks bought about 289 tonnes in Q2." },
+    { "date": "2026-08-07", "cat": "Macro", "impact": "bullish", "headline": "Weak US jobs data cools rate-hike bets", "note": "A surprise contraction in July jobs. Oil also softened, and gold bounced off the $4,000 area." },
+    { "date": "2026-07-31", "cat": "ETF flows", "impact": "bullish", "headline": "Gold ETFs gain $3 billion in July", "note": "Ended two straight months of outflows, per the World Gold Council." },
+    { "date": "2026-06-30", "cat": "Price", "impact": "mixed", "headline": "Gold hits its 2026 low of about $3,955", "note": "Positioning, sentiment and ETF flows all showed capitulation, a pattern seen at past bottoms. The Nov 20 low went below it." },
+    { "date": "2026-05-22", "cat": "Fed", "impact": "mixed", "headline": "Kevin Warsh becomes Fed chair", "note": "His early signals leaned slightly hawkish, which removed a support gold had enjoyed." },
+    { "date": "2026-02-28", "cat": "Geopolitics", "impact": "bearish", "headline": "Late February: the Iran war begins and oil rallies", "note": "Gold fell on liquidity needs and higher rate expectations instead of acting as a safe haven. The exact day was not checked." },
+    { "date": "2026-02-03", "cat": "Price", "impact": "bullish", "headline": "Gold rebounds 5% after the January crash", "note": "Back to about $4,913, helped by short covering and $4.4 billion of ETF inflows." },
+    { "date": "2026-01-30", "cat": "Fed", "impact": "bearish", "headline": "Crash day: gold falls about 11% and silver about 31%", "note": "Trump named Kevin Warsh as the next Fed chair. The dollar jumped and CME had raised margin requirements several times in nine days, forcing leveraged sellers out." },
+    { "date": "2026-01-29", "cat": "Price", "impact": "mixed", "headline": "Gold sets its record near $5,600", "note": "The end of a parabolic run. Gold had gained nearly 65% in 2025." }
+  ]
+}
