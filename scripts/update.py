@@ -59,18 +59,60 @@ def fred_series(series_id, key, limit=90):
     return rows
 
 
-def gold_prices(limit=120):
-    """Daily gold closes in US dollars from Stooq's free CSV. Oldest first."""
-    text = fetch_text("https://stooq.com/q/d/l/?s=xauusd&i=d")
+def xaus_gold():
+    """Daily spot gold closes in US dollars from xaus.com's free public API (no key). Oldest first."""
+    points = json.loads(fetch_text("https://xaus.com/api/v1/history"))["points"]
     rows = []
-    for rec in csv.DictReader(io.StringIO(text)):
+    for p in points:
         try:
-            rows.append((rec["Date"], float(rec["Close"])))
+            rows.append((str(p["d"])[:10], float(p["c"])))
         except (KeyError, ValueError, TypeError):
             continue
+    rows.sort()
     if len(rows) < 30:
         raise ValueError("too few price rows")
-    return rows[-limit:]
+    return rows
+
+
+def yahoo_gold():
+    """Backup: daily gold futures closes (GC=F) from Yahoo Finance's public chart feed."""
+    url = "https://query1.finance.yahoo.com/v8/finance/chart/GC%3DF?range=1y&interval=1d"
+    result = json.loads(fetch_text(url))["chart"]["result"][0]
+    closes = result["indicators"]["quote"][0]["close"]
+    rows = []
+    for stamp, close in zip(result["timestamp"], closes):
+        if close is None:
+            continue
+        day = dt.datetime.fromtimestamp(stamp, dt.timezone.utc).strftime("%Y-%m-%d")
+        rows.append((day, float(close)))
+    if len(rows) < 30:
+        raise ValueError("too few price rows")
+    return rows
+
+
+GOLD_SOURCES = (
+    ("xaus.com spot gold", xaus_gold),
+    ("Yahoo Finance gold futures", yahoo_gold),
+)
+MAX_PRICE_AGE_DAYS = 10
+PRICE_RANGE = (500, 20000)  # a close outside this is a bad feed, not a gold price
+
+
+def gold_prices(limit=120):
+    """Tries each gold source in turn. Returns (rows, source name)."""
+    errors = []
+    for name, fn in GOLD_SOURCES:
+        try:
+            rows = fn()[-limit:]
+            last_day = dt.date.fromisoformat(rows[-1][0])
+            if (dt.date.today() - last_day).days > MAX_PRICE_AGE_DAYS:
+                raise ValueError(f"latest price is from {rows[-1][0]}, too old")
+            if not all(PRICE_RANGE[0] < v < PRICE_RANGE[1] for _, v in rows):
+                raise ValueError("prices outside the believable range")
+            return rows, name
+        except Exception as exc:
+            errors.append(f"{name}: {type(exc).__name__}: {str(exc)[:80]}")
+    raise ValueError(" | ".join(errors))
 
 
 def parse_rss(text):
@@ -228,7 +270,8 @@ def main():
     real_yield = attempt("Real yield (FRED DFII10)", need_key("DFII10"))
     dollar = attempt("Dollar index (FRED DTWEXBGS)", need_key("DTWEXBGS"))
     funds = attempt("Fed funds rate (FRED DFF)", need_key("DFF"))
-    gold = attempt("Gold price (Stooq)", gold_prices)
+    gold_result = attempt("Gold price (xaus.com, then Yahoo)", gold_prices)
+    gold, gold_source = gold_result if gold_result else (None, "")
     headlines = attempt("News headlines (Google News)", news)
     fed_news = attempt("Fed releases (federalreserve.gov)", fed_releases)
 
@@ -239,6 +282,7 @@ def main():
         last_date, last_close = gold[-1]
         info["price"] = round(last_close, 2)
         info["priceDate"] = last_date
+        info["priceSource"] = gold_source
         low_close = min(gold, key=lambda r: r[1])
         if low_close[1] < float(info.get("low", 1e12)):
             info["low"] = round(low_close[1], 2)
@@ -265,6 +309,8 @@ def main():
         rows, judge = judges.get(auto, (None, None))
         if judge and rows:
             status, reading, when = judge(rows)
+            if auto == "price" and gold_source:
+                reading += f" Source: {gold_source}."
             out.update(status=status, reading=reading, updated=when, source="auto")
         elif auto == "fed" or "status" in sig:
             out.update(status=sig["status"], reading=sig["reading"], updated=sig.get("updated", ""), source="manual")
