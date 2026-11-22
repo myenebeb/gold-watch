@@ -1,7 +1,7 @@
 {
- "generated": "2026-11-21T22:13Z",
- "refreshed": "2026-11-21T22:13Z",
- "today": "2026-11-21",
+ "generated": "2026-11-22T01:14Z",
+ "refreshed": "2026-11-22T01:14Z",
+ "today": "2026-11-22",
  "health": [
   {
    "source": "Real yield (FRED DFII10)",
@@ -296,11 +296,18 @@
  ],
  "headlines": [
   {
-   "title": "Gold Breaks Down but is This a Sign of What’s to Come? - StoneX",
-   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOVEVJZDNBZS1OLW92S0hGaURiVTUxZkNicmhHYjZxN3VQbnZhQlgyVEFTb2hGQTFPZUtmYVg1Sk5aRXU2UU1aYUN2ZjBZRUxMeUFGRWx6c2w1dVB0SmQ3ck4wVE92aDNhQXBZNnNCcXN4MGxPS2JZd1NkS1MxWmN6NlRjc2Jra0RlWTlickROVVBpS0t6dW44eFdCOUhKMEd2Yk1z?oc=5",
-   "cat": "Fed",
-   "source": "StoneX",
-   "when": "2026-11-21T20:03Z"
+   "title": "China buys gold for 24 straight months despite price fall: Can central banks support bullion? - Business Today",
+   "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOdDZ3bThKaW9MaTIzU2ZldnZaNnpUYkh4M1Yzb2xSYlkzVHNXM1hZMVRCbGwzS3BGWHdQSXVYVkEtTlpRNkJqZFA2LWpwS2dFMGh2S01PZ0RibFY3WWw5RWstSDY1VGx3bkRHVVk4UFh0blJLeHlCSURDTkNoWkV2RmxkRzJrdmh1clBMLXRTVGZGaFZ3YVVvUE8tMGNYVEhxcDY4eDFHTGFLRDdhQklNMVg4Zzg0NjgyUTdTR3ZVOE4zQV9UQjhQczlHb0MyVzdmcjgzVnN1T2Y3WjVaQk1ZNjM1NF_SAeoBQVVfeXFMT2lDZGJBSFFfSVdUZVZCWTRpalh3WklOVzhlalVtWHBzOUNFbGlLZDB2eFJKeEk5QWpTSlJsdkRESkgzZEVqN1dKWXRGVHdXN3cyb2stQjdBVndPRi1UWlBNSnBmaktlNXAtTHRwTUcyUUlqWnhLckZkSUdkSkRiSWZXMlhrQllSNmx0Nm1ZWVloQl9BeGJGd2hCVjIwSlg0TGhDV0Jkb3Rya0hYTG1zZWR6cDIyekREOFR1UWdGRDE5RWFtRXdvUXlPRHpBWXNqZ2lhVU1GcGp4d2JQZ0ctdzVJRTZ2VU5xZ3V3?oc=5",
+   "cat": "Central banks",
+   "source": "Business Today",
+   "when": "2026-11-21T21:35Z"
+  },
+  {
+   "title": "Gold Price Today | Price of Gold Per Ounce | 24 Hour Spot Chart - Kitco",
+   "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBnU2dTNUduLWh4WmxVQy1ndS1jN01abVlCeTNTMnFMbFdmS1d6TnFCekxTZVlXNGtKdnNRN3plT00yZm5LQmh6Rg?oc=5",
+   "cat": "Macro",
+   "source": "Kitco",
+   "when": "2026-11-21T18:55Z"
   },
   {
    "title": "Gold’s slide deepens as AI rout, rate-hike bets hurt bullion - www.daily-sun.com",
@@ -315,13 +322,6 @@
    "cat": "Fed",
    "source": "Investing.com",
    "when": "2026-11-21T17:52Z"
-  },
-  {
-   "title": "Gold Price Today | Price of Gold Per Ounce | 24 Hour Spot Chart - Kitco",
-   "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBnU2dTNUduLWh4WmxVQy1ndS1jN01abVlCeTNTMnFMbFdmS1d6TnFCekxTZVlXNGtKdnNRN3plT00yZm5LQmh6Rg?oc=5",
-   "cat": "Macro",
-   "source": "Kitco",
-   "when": "2026-11-21T15:58Z"
   },
   {
    "title": "Gold prices have fallen nearly 37% in 10 months; what could push prices down further? - Vietnam.vn",
@@ -346,7 +346,7 @@
   },
   {
    "title": "Gold prices plunge in Pakistan, fall by Rs3,500 per tola - ARYnews.tv",
-   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1xR2xwWmMxMzVYWnBzNDJIam1JcVhrMFFGbEZKTXBRVjNFQzh4TC0xV1U2ZWhVSGxXM01uOVdfT2hCZldyVC1SY0VqUWpBR2FTWGRmc1NRcjJBSW5teE16TUQ2eGdmWWxESW1ldGZ2Vi1YWHRSOG9Jd2pKLXVYc2c?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9NYlR1eGtnY29md3N3ZHlVZk5KM3BWZDBqRDhsVi1oUUUwQ0YxSGVaZGhoQVgzcmtnRUlWUjNGbjdRVmRuQnRVOV9saHNZb0VPeG51UEx5MHBMUVlQZEdQOHRxSHNTWkswSTFPRWpCcUJfQTNrcDF4bDVWSko4QQ?oc=5",
    "cat": "Geopolitics",
    "source": "ARYnews.tv",
    "when": "2026-11-21T12:30Z"
