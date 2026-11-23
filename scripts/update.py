@@ -98,7 +98,7 @@ MAX_PRICE_AGE_DAYS = 10
 PRICE_RANGE = (500, 20000)  # a close outside this is a bad feed, not a gold price
 
 
-def gold_prices(limit=120):
+def gold_prices(limit=300):
     """Tries each gold source in turn. Returns (rows, source name)."""
     errors = []
     for name, fn in GOLD_SOURCES:
@@ -242,6 +242,63 @@ def last_n(rows, n=60):
     return [round(v, 4) for _, v in rows[-n:]]
 
 
+# Blow-off check thresholds. Change these numbers to make the check stricter or looser.
+BLOWOFF_STRETCH = 25.0   # percent above the 200-day average
+BLOWOFF_SPEED = 15.0     # percent gained in 20 trading days
+BLOWOFF_HOT_PCT = 3.0    # a "hot day" is a daily gain of at least this percent
+BLOWOFF_HOT_DAYS = 3     # hot days needed within the last 10 trading days
+BLOWOFF_REVERSAL = 8.0   # percent below the 20-day high that counts as a turn after a stretch
+
+
+def judge_blowoff(rows):
+    """Rules: count how many of three conditions are met (far above the 200-day average,
+    gained a lot in 20 days, several big up days in the last 10). 0 = not present, 1 = early signs,
+    2 or 3 = blow-off conditions. If gold was stretched in the last 20 days and has since dropped
+    8% from its 20-day high, the status is 'possible top is in'. Needs about 220 daily closes."""
+    vals = [v for _, v in rows]
+    if len(vals) < 220:
+        return None
+    date, last = rows[-1][0], vals[-1]
+    ma200 = sum(vals[-200:]) / 200
+    stretch = (last / ma200 - 1) * 100
+    peak_stretch = max(
+        (vals[i] / (sum(vals[i - 199:i + 1]) / 200) - 1) * 100 for i in range(len(vals) - 20, len(vals))
+    )
+    gain20 = (last / vals[-21] - 1) * 100
+    hot = sum(1 for i in range(len(vals) - 10, len(vals)) if (vals[i] / vals[i - 1] - 1) * 100 >= BLOWOFF_HOT_PCT)
+    high20 = max(vals[-20:])
+    off_high = (1 - last / high20) * 100
+
+    checks = [
+        {"id": "stretch", "label": "Distance above the 200-day average", "value": round(stretch, 1), "limit": BLOWOFF_STRETCH,
+         "unit": "%", "hit": stretch >= BLOWOFF_STRETCH, "counts": True},
+        {"id": "speed", "label": "Gain over the last 20 trading days", "value": round(gain20, 1), "limit": BLOWOFF_SPEED,
+         "unit": "%", "hit": gain20 >= BLOWOFF_SPEED, "counts": True},
+        {"id": "hot", "label": "Days up %g%% or more, of the last 10" % BLOWOFF_HOT_PCT, "value": hot, "limit": BLOWOFF_HOT_DAYS,
+         "unit": "days", "hit": hot >= BLOWOFF_HOT_DAYS, "counts": True},
+        {"id": "reversal", "label": "Drop from the 20-day high", "value": round(off_high, 1), "limit": BLOWOFF_REVERSAL,
+         "unit": "%", "hit": off_high >= BLOWOFF_REVERSAL, "counts": False},
+    ]
+    count = sum(1 for c in checks if c["counts"] and c["hit"])
+    base = (f"Gold closed at ${last:,.0f} on {date}, {abs(stretch):.1f}% "
+            f"{'above' if stretch >= 0 else 'below'} its 200-day average of ${ma200:,.0f}.")
+    if peak_stretch >= BLOWOFF_STRETCH and off_high >= BLOWOFF_REVERSAL:
+        status, label = "reversal", "Possible top is in"
+        why = (f"Within the last 20 days gold was up to {peak_stretch:.0f}% above its 200-day average, "
+               f"and it has since fallen {off_high:.1f}% from its 20-day high. That is the pattern after a blow-off top.")
+    elif count >= 2:
+        status, label = "active", "Blow-off conditions"
+        why = f"{count} of 3 blow-off conditions are met. The rally is stretched and moving fast."
+    elif count == 1:
+        status, label = "early", "Early signs"
+        why = "1 of 3 blow-off conditions is met. Watch whether the others follow."
+    else:
+        status, label = "none", "Not present"
+        why = "0 of 3 blow-off conditions are met."
+    return {"status": status, "label": label, "reading": base + " " + why, "count": count,
+            "checks": checks, "updated": date}
+
+
 # ---------------------------------------------------------------- main
 def main():
     with open(MANUAL, encoding="utf-8") as fh:
@@ -350,6 +407,7 @@ def main():
         "info": info,
         "cycle": manual.get("cycle", {}),
         "signals": signals,
+        "blowoff": judge_blowoff(gold) if gold else None,
         "events": manual.get("events", []),
         "headlines": all_headlines[:30],
         "series": series,
