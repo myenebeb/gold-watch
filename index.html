@@ -88,6 +88,16 @@ a { color: var(--accent); text-underline-offset: 2px; }
 .pill.bear { background: var(--bear-bg); color: var(--bear); } .pill.bull { background: var(--bull-bg); color: var(--bull); }
 .pill.warn { background: var(--warn-bg); color: var(--warn); } .pill.turn { background: var(--turn-bg); color: var(--turn); }
 .pill.mute { background: var(--mute-bg); color: var(--mute); }
+.bo { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 16px; display: flex; flex-direction: column; gap: 16px; }
+.bo-top { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 10px 16px; }
+.bo-top p { flex: 1 1 280px; min-width: 0; font-size: 14px; }
+.bo-checks { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 200px), 1fr)); gap: 0; border-top: 1px solid var(--line); }
+.bo-check { padding: 12px 14px 4px 0; display: flex; flex-direction: column; gap: 3px; min-width: 0; }
+.bo-check .bl { font-size: 12px; color: var(--muted); }
+.bo-check .bv { font-family: var(--font-data); font-size: 22px; font-variant-numeric: tabular-nums; line-height: 1.2; }
+.bo-check .bt { font-size: 12px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 4px 8px; align-items: center; }
+.bo-check.hit .bv { color: var(--bear); }
+.bo-note { font-size: 13px; color: var(--muted); }
 
 .chips { display: flex; flex-wrap: wrap; gap: 6px; }
 .chip { font: inherit; font-size: 13px; padding: 5px 12px; border: 1px solid var(--line); border-radius: 99px; background: var(--surface); color: var(--ink); cursor: pointer; }
@@ -158,6 +168,14 @@ a { color: var(--accent); text-underline-offset: 2px; }
       <p class="summary" id="sigSummary">Loading signals.</p>
     </div>
     <div class="signals" id="signals"></div>
+  </section>
+
+  <section class="sec" id="boSec" aria-labelledby="h-bo" hidden>
+    <div class="sec-head">
+      <h2 id="h-bo">Blow-off check</h2>
+      <p>Is gold in the last, fastest stretch of a rally? This reads the price only. It shows conditions and cannot predict a top.</p>
+    </div>
+    <div class="bo" id="bo"></div>
   </section>
 
   <section class="sec" aria-labelledby="h-ev">
@@ -359,7 +377,30 @@ a { color: var(--accent); text-underline-offset: 2px; }
     });
   }
 
-  function renderAll() { renderHeader(); renderCycle(); renderSignals(); renderEvents(); renderNews(); }
+  var BO_PILL = { none: "mute", early: "warn", active: "bear", reversal: "bear" };
+  function renderBlowoff() {
+    var b = D.blowoff, sec = $("boSec"), box = $("bo");
+    if (!b || !b.checks) { sec.hidden = true; return; }
+    sec.hidden = false; clear(box);
+    box.append(h("div", { class: "bo-top" },
+      h("span", { class: "pill " + (BO_PILL[b.status] || "mute"), text: b.label }),
+      h("p", { text: b.reading })));
+    var grid = h("div", { class: "bo-checks" });
+    b.checks.forEach(function (c) {
+      var val = c.unit === "%" ? (c.value > 0 && c.id !== "reversal" ? "+" : "") + c.value.toFixed(1) + "%" : c.value + " of 10";
+      var lim = c.unit === "%" ? c.limit + "% or more" : c.limit + " or more";
+      var on = c.counts ? c.hit : (c.hit && b.status === "reversal");
+      var pillText = on ? "Flagged" : (!c.counts && c.hit ? "Only after a rally" : "Clear");
+      grid.append(h("div", { class: "bo-check" + (on ? " hit" : "") },
+        h("span", { class: "bl", text: c.label }),
+        h("span", { class: "bv", text: val }),
+        h("span", { class: "bt" }, "Flag at " + lim,
+          h("span", { class: "pill " + (on ? "bear" : "mute"), text: pillText }))));
+    });
+    box.append(grid, h("p", { class: "bo-note", text: "The first three checks count toward a blow-off. The fourth only matters after gold has been stretched, and it is what turns the status to “Possible top is in”. Updated " + fmtDate(b.updated) + "." }));
+  }
+
+  function renderAll() { renderHeader(); renderCycle(); renderSignals(); renderBlowoff(); renderEvents(); renderNews(); }
 
   function load() {
     fetch("data.json?t=" + Date.now(), { cache: "no-store" }).then(function (r) {
