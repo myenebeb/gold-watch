@@ -11,6 +11,13 @@
     "note": "Gold made a base near $4,000 in June and July, rallied 13% in August, then broke back below that base. That means either a second leg down inside phase 4 or a new capitulation (phase 5) that is not confirmed yet.",
     "updated": "2026-11-21"
   },
+  "fedwatch": {
+    "_help": "Type the chance of a quarter-point hike from CME FedWatch (cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html), then the date. The page asks you to refresh it after 5 days.",
+    "meeting": "2026-12-09",
+    "hike25": 93,
+    "source": "CME FedWatch, as reported by Reuters",
+    "updated": "2026-11-23"
+  },
   "signals": [
     {
       "id": "real-yields", "order": 1, "name": "Real yields (10-year)", "auto": "real_yield", "series": "real_yield",
