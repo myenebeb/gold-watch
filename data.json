@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-24T12:19Z",
- "refreshed": "2026-11-24T12:19Z",
+ "generated": "2026-11-24T12:23Z",
+ "refreshed": "2026-11-24T12:23Z",
  "today": "2026-11-24",
  "health": [
   {
@@ -13,6 +13,10 @@
   },
   {
    "source": "Fed funds rate (FRED DFF)",
+   "ok": true
+  },
+  {
+   "source": "2-year Treasury yield (FRED DGS2)",
    "ok": true
   },
   {
@@ -127,6 +131,26 @@
    "source": "auto"
   }
  ],
+ "fedgauge": {
+  "status": "easing",
+  "label": "Hike pricing easing",
+  "reading": "The 2-year Treasury yield was 4.63% on 2026-11-20 and the effective fed funds rate was 3.88% on 2026-11-20. The gap is +0.75 points. That is about 3 quarter-point hikes priced in over the next two years. The 2-year yield is 0.25 points below its 20-day high and moved -0.25 over the last 5 trading days.",
+  "gap": 0.75,
+  "steps": 3.0,
+  "twoYear": 4.63,
+  "twoYearHigh20": 4.88,
+  "fundsRate": 3.88,
+  "chg5": -0.25,
+  "min": -0.5,
+  "max": 1.0,
+  "zones": [
+   -0.25,
+   0.15,
+   0.5
+  ],
+  "updated": "2026-11-20"
+ },
+ "fedwatch": null,
  "blowoff": {
   "status": "none",
   "label": "Not present",
@@ -344,6 +368,20 @@
  ],
  "headlines": [
   {
+   "title": "US Dollar Hits 20-Month High as JPMorgan Sees Treasury Yields Above 5% in 2027 - Coinpaper",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPM2FDNEo2elBXZlFKZW01RnViaGlKTXgzWDFiV2RxcVZSaXFxRkhJNlpYQnk2Z1FnLTZ3R3RzVUowTmU0WWZUMl9lNjlZai12N3Jza0V0ZnptODlsOEdzcDRWaWNhalV1eTVwa2FQbXRUZFdhM2doeHhtMUZGM1I5ZGNzWjJLcTBqTld2aWRxUzdqNkJPbEo3ZjZmMy1KZG4tWUQ1a3RZek5uZw?oc=5",
+   "cat": "Macro",
+   "source": "Coinpaper",
+   "when": "2026-11-24T12:19Z"
+  },
+  {
+   "title": "Central banks buy 675 tonnes of gold despite price crash: What does it signal for bullion investors? - Business Today",
+   "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPRmtoVGJfMVYzRFNXZnRjYXlRNUVDLVFKRHhiV0drZjJncklYN3pGVzRBZ3Y1V0p6YUUwUlR0Yko5ZzVNU2lKOV9aSGRxSVdtVVhOM28yMldsdFV5Zl9KQnU2NWN0bHBfdUdxSDVBLTFVUy1taFd4dVJXd0czWHFURXp1U3dRa2ktOWYtZExYNlBaaEp5XzlHSnhjU1NLOVdTSTYtaktOZmNBM2w5U1RVeEMwNlBVU0hBR3hZc1pmbk9rbGZqYURkQmNnZTZMMnhfc1FndTROVjgtRG03RkFfS3lsVHVUQVlGbEV1Tks4QWNFMkUyaGxpYkJmRVPSAYICQVVfeXFMUDFsOWg3LVg0TlZFeXQ0RTNkTE5xYUQ0S3NMY3hGNFhMRzFxaWpGZk0xbHB2T0Y4TjRoaHhnV0R6U3dYc1JBRkF4NzdDdmlDb2xXZDBPMkhqWFBNcWJidGppQXdvS0M5LWVDTG55aHNyR1pGMkNLdE9VdlpKOVd3OUd2LUNhYldwdk91SzZILVFnM3FfRFh1Vmo5MHJzU0FnbWJTSkFFaVd1TU1VSS1jMVVuM1I1dG02QUZyUmNGN0ttVFE0S2prdDVXd2p2WmpZbTBtQnA4SE9oUHpXandhbkxHSTRxUkJEamRhWlZrVERsVHVzdkR3WHJaN3RFejdDUWpn?oc=5",
+   "cat": "Central banks",
+   "source": "Business Today",
+   "when": "2026-11-24T12:09Z"
+  },
+  {
    "title": "Bullion tumbles again: Gold slips 0.7%, silver nearly 3% down; Three US triggers to watch - Moneycontrol.com",
    "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPWkpPMkpLdzVwaWFubVJTRjcwclBpTGJXOFl0cjRTZldSWXVYdWY2dlQyZkd2WV9ROWJzOEQyc3lGWTF5bE16Ymt5M1I2Z1ZJRWk1QVZCVGljbXRwdWJIWFphTG40Q3NMaTRLUXd3RVhaTWpMNDB6djRUc29nc2JwTFFHczYwekYxNXc0TG9FamlDclZrN2Fla1QtUllNMWptQm01aV9oT3o5OElYNUkwaWZERzdXamFjUzB3MWdWVUE2bUVJYlNRaDFTNEZnb1pxQ3EyMmc0VTFFa2ZKa1BleDljcVlhcTVibTRIdVBTNNIB9AFBVV95cUxOUVI5Z3FDY0JCYjVtUklsZVZ6WUdBM0kzSnlIUHo3MU9PWmtTc09QSGNEakExQTVCV3dqVldpTUZlQWY2UmpGS3RfR1lnN1lobzZkZGttOUZXUGN4VUc0dXZzMmhGWTI0U29oX1F0RGk2NkJpSEkzQXBNVEt2MzVyVlNiTG5PTlJUVHFuOUdLdFhvMjl6TXloOTNmSHp5Z2NrcWFkS204REVISGFqaEhzZ0pZTnBNREFzUHdmaXZaT1JzOHhrTk84X05wemlvMDdlMVh1SnVLblJieGFsMXFqbEpHTDFvcFQtYWxsS0haVmNKZTBx?oc=5",
    "cat": "Fed",
@@ -363,13 +401,6 @@
    "cat": "Fed",
    "source": "FXStreet",
    "when": "2026-11-24T11:03Z"
-  },
-  {
-   "title": "Gold Holds Gain After Nvidia’s Rehiring of Huang Sparks Rally - Bloomberg.com",
-   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPdmx6UDZKMVladVJKQ1lxa3lSaU1BR3h2VGcwUVpJNW8yVmpyaTIxTTctWUZ2VV9ZX1ppbDNhTEIyYVBrckJ1Sm1YMUZBLWVXLXZFMkNnRXJoMWZndzhwcHVmYWRWSjlHRUJVWUhIZnl3QnZrYWJWU1dIWTF1Mm1pYzV0YlFxWE9RU1NyazhrbU56a1hGTDJ4RTY3ZkVZVFRWaTdsa2Jrdm02d3NyRWNYbEZR?oc=5",
-   "cat": "Fed",
-   "source": "Bloomberg.com",
-   "when": "2026-11-24T10:58Z"
   },
   {
    "title": "Gold Retreats to US$3,625.88 as Investors Assess US Inflation and Interest Rate Outlook - Yahoo Finance UK",
@@ -398,6 +429,13 @@
    "cat": "Macro",
    "source": "News On AIR",
    "when": "2026-11-24T10:14Z"
+  },
+  {
+   "title": "Why has gold’s high liquidity become a “cushion” for deleveraging? - Moomoo",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPczYyU1JpN1VvbUR1MWU0Wjktc3k0cEZnOWtIdzYxdVFVM1oxc193aExhYzRlV0VYWXhkSF9WSFVESmVSTzVjdldSaFhDdnB2UmpYbWpwbjUyRFFnOWZxc1V2ZVMxQXd4b2VNTGpjSm9Od3BadFJ3SEx4RzR6b2hiWDlKZ1RYNkRsLXNEenVhT2RYMVU5WTJPM2xB?oc=5",
+   "cat": "Geopolitics",
+   "source": "Moomoo",
+   "when": "2026-11-24T09:59Z"
   },
   {
    "title": "Gold and silver decline as US interest rate hike expectations weigh on demand - Economies.com",
@@ -491,6 +529,13 @@
    "when": "2026-11-24T05:24Z"
   },
   {
+   "title": "Gold price in India: Rates on November 24 - FXStreet",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPSlFKSE9lY0xoTzhQcGZyWGxVeC1UNGxsZ0lBVklEbnRIQk9KS0ctZVpENTB6eDMyWjQ4SkpNS0tSM2VIWHItZHdsZi1KZUhTRDlwdmo0c0djdFhDQ0pFSlRYcHI5Y3FrbFNUR1h3M3NSa2Fvd1BFaWpBQ1ZwMlhEeUFWaThobk5zbFdZZTVBOEhLOWE4elJkb0xxN2RpdVpaZkk0QU1B?oc=5",
+   "cat": "Geopolitics",
+   "source": "FXStreet",
+   "when": "2026-11-24T04:39Z"
+  },
+  {
    "title": "Gold ticks up on bargain buying; U.S. inflation data awaited - CNBC",
    "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE01bWhmbU4xZ1hKTVZnTGh3R2tubjZ5SlE0OFVjaGJDcGRzUHIzWnI1RmhuZzBDUkE3R2RIQ3ZDNU9xV282X3QxTFdvZVpIUUhWRnJEWXFCbDJ4QTNiLTNkRWtzYy16S3VWdFY2OS1rS1N1LXo4Z2JBcTNKb0FZNWPSAYQBQVVfeXFMTXd0ckxjMUlfaXVYbFFieDlSbWs1OWZWRkljX0VHM1ZJeE1wRWhNbFJFbmIwZXR4WmR5UC13NGpDaTVMNkw3Vk1EdG43S3c1VWx0WERuM0htTVpHRjFieV9VeVhfN3p2ZUgzQndxT0gxaFZDbE9NRW96VFV0eU4xU0owcWhf?oc=5",
    "cat": "Fed",
@@ -526,32 +571,11 @@
    "when": "2026-11-24T02:48Z"
   },
   {
-   "title": "Gold edges up on bargain buying after sell-off, US inflation data awaited - KLSE Screener",
-   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPMEZHZFRHN3VGTUxBRm1BWTRhUjdsaGQ3RHRuS012aEpyVk12RnBxQzdmdzdjNXo2ZlVJSC1FVlgwTzRhTWk1RnJCT1NoTUJGdTBmQjdXdHZGbVFIczZ6VUs5UXZSbmpMczk3SUJFM292MFZhd1N4Ulp5Z2k2S0RvajcwSnM5SGRrRmFCYVQ1aUNZMFk2SmtGYmF4Sml3ZFNOV0MtMmJsTFdnRWxiQzJ1ZE8xQjJvSnk2bFliY0gwQQ?oc=5",
-   "cat": "Fed",
-   "source": "KLSE Screener",
-   "when": "2026-11-24T01:56Z"
-  },
-  {
-   "title": "Gold's road back to $5,000: four big banks bet on recovery, but the Fed sets the pace - investingLive",
-   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPZmNlQ1pidDQtTDRwR1ZOa1hlVjF4NjRCN3hZN3JhMFByZ0pyVjF0LWYyX2xiZ0FBcE1Ib2c3WDFIUk1mWnF4Z1ZJWVVLVE5VclNwQ2tuRUY4TXZLTHowaV9IVFV5RFpSOURNdzBwbk5GUTZDNUFZZnJSam9kREptMWwzck5hdGVnRlJHWU1FSzlWOHRvbERXeXhaNDdEdHlZMWZTN25WMUw0REdFTVdCR1JMY08wTm1wY2JpZDF3?oc=5",
-   "cat": "Fed",
-   "source": "investingLive",
-   "when": "2026-11-24T01:36Z"
-  },
-  {
-   "title": "Gold rebounds above $3,600 as CEO Nvidia returns, markets trim Fed hike - Mitrade",
-   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQZlZZOXNiSldJSS1HaDlNWmZFc0tpNW9PQWFaSkxuQndtSm9lMXNPbk9tNjJHWEtlWDQ5a0hwY1hVVFc1RFNWRUdBaVRNZXMtMlNFdmJkVUtLVTU0ZmszRDNXeldIQzhJUjk1NHRHMHdlRVZhdGctMzFFU0I0dkdEdXN5aHl5NjJMVS0yTHdKZm9FdklFUFV3OVRn?oc=5",
-   "cat": "Fed",
-   "source": "Mitrade",
-   "when": "2026-11-24T01:35Z"
-  },
-  {
-   "title": "$3,600 reclaimed: Gold recovers as Nvidia CEO returns and markets scale back Fed rate hike expectations - www.tmgm.com",
-   "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNNWtlRHVlQU1XTGdTQW5XZjJyUXpyLVNSdEYxNHUydXhfM1lZS0ZhX3l2cEdSLXp1c19NcWpzYmlCY1EzbnZZVmxRMy1wVm5XaVdfQ21LT0lLLVVVUGhnZ2M5TlRaeHFITEJ6bTZ3NEJBdnpRbkZkb1V1QWxhXzZVODJEaGY2SkhiZU92MDEtcVVlZ3d4bTZ2d1hTVm15YXpFQlMtaUk3QURLekVNZ3V3Y3U4VTk1cWZybUxtd3VZcW1zZG1TTE9IaDhoX3czQ1ppSHc?oc=5",
-   "cat": "Fed",
+   "title": "PBOC sets USD/CNY reference rate at 6.7111 vs. 6.7120 previous - www.tmgm.com",
+   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQZDVzbXloeXFVZ05nZG91UjFUOC1fZzR5YjRoZnhRWktGeHRibkhCa0o4T2dNVTJzdkNQeXBKajFkMWFBb0REYnlpcE11TXZRRWNZUkJEazA2MzdjdVk4ZGRFd2pVRG5wZV9uWnBnNFRjYWZaa0w2dEYzN2VLVGxZOHB1TlRFM1BzY21tTEFBRUZfamZRSGFmVXRWRDJmcDBUNC1VVE1VRTR3V3ZITnY3NWN0VFp3cGVPYTlsSHZEd2lsSG8?oc=5",
+   "cat": "Central banks",
    "source": "www.tmgm.com",
-   "when": "2026-11-24T01:31Z"
+   "when": "2026-11-24T01:59Z"
   }
  ],
  "series": {
@@ -740,6 +764,68 @@
    123.1376,
    123.5253,
    123.5978
+  ],
+  "two_year": [
+   4.19,
+   4.2,
+   4.34,
+   4.34,
+   4.39,
+   4.39,
+   4.34,
+   4.37,
+   4.39,
+   4.43,
+   4.56,
+   4.63,
+   4.65,
+   4.67,
+   4.74,
+   4.67,
+   4.76,
+   4.76,
+   4.71,
+   4.85,
+   4.87,
+   4.81,
+   4.92,
+   4.89,
+   4.88,
+   4.78,
+   4.83,
+   4.84,
+   4.79,
+   4.77,
+   4.75,
+   4.8,
+   4.79,
+   4.82,
+   4.77,
+   4.74,
+   4.77,
+   4.79,
+   4.81,
+   4.65,
+   4.69,
+   4.68,
+   4.7,
+   4.67,
+   4.61,
+   4.56,
+   4.59,
+   4.61,
+   4.58,
+   4.46,
+   4.51,
+   4.56,
+   4.73,
+   4.86,
+   4.88,
+   4.83,
+   4.8,
+   4.8,
+   4.76,
+   4.63
   ]
  }
 }
