@@ -242,6 +242,67 @@ def last_n(rows, n=60):
     return [round(v, 4) for _, v in rows[-n:]]
 
 
+# Fed hike gauge. The gap between the 2-year Treasury yield and the current fed funds rate shows how
+# many hikes (or cuts) the bond market expects over about two years. Change these numbers to retune it.
+GAUGE_MIN, GAUGE_MAX = -0.50, 1.00   # ends of the dial, in percentage points of gap
+GAUGE_CUTS = -0.25                   # gap at or below this = cuts priced
+GAUGE_HOLD = 0.15                    # gap below this = on hold
+GAUGE_STRONG = 0.50                  # gap at or above this = hikes strongly priced
+GAUGE_EASING_OFF = 0.20              # 2-year yield this far under its 20-day high, and falling = easing off
+
+
+def judge_fed_gauge(two_year, funds):
+    """Rules: gap = 2-year yield minus effective fed funds rate. At or below -0.25 = cuts priced.
+    Below +0.15 = on hold. +0.15 or more but the 2-year yield is 0.20+ under its 20-day high and falling
+    over 5 days = easing off. +0.50 or more = hikes strongly priced. Otherwise hikes priced.
+    One quarter-point hike is 0.25, so gap / 0.25 is a rough count of hikes."""
+    if not two_year or not funds:
+        return None
+    y = [v for _, v in two_year]
+    last2, d2 = y[-1], two_year[-1][0]
+    rate, dff = funds[-1][1], funds[-1][0]
+    gap = last2 - rate
+    hi20 = max(y[-20:])
+    off = hi20 - last2
+    chg5 = last2 - y[-6] if len(y) > 5 else 0.0
+    steps = gap / 0.25
+    if gap <= GAUGE_CUTS:
+        status, label = "cuts", "Cuts priced"
+    elif gap < GAUGE_HOLD:
+        status, label = "hold", "On hold"
+    elif off >= GAUGE_EASING_OFF and chg5 < 0:
+        status, label = "easing", "Hike pricing easing"
+    elif gap >= GAUGE_STRONG:
+        status, label = "strong", "Hikes strongly priced"
+    else:
+        status, label = "hikes", "Hikes priced"
+    if gap >= GAUGE_HOLD:
+        meaning = f"That is about {max(1, round(steps))} quarter-point hike{'s' if round(steps) > 1 else ''} priced in over the next two years."
+    elif gap <= GAUGE_CUTS:
+        meaning = f"That is about {max(1, round(-steps))} quarter-point cut{'s' if round(-steps) > 1 else ''} priced in over the next two years."
+    else:
+        meaning = "The market expects the Fed to stay roughly where it is."
+    reading = (f"The 2-year Treasury yield was {last2:.2f}% on {d2} and the effective fed funds rate was "
+               f"{rate:.2f}% on {dff}. The gap is {gap:+.2f} points. {meaning} The 2-year yield is "
+               f"{off:.2f} points below its 20-day high and moved {chg5:+.2f} over the last 5 trading days.")
+    return {"status": status, "label": label, "reading": reading, "gap": round(gap, 3), "steps": round(steps, 1),
+            "twoYear": round(last2, 3), "twoYearHigh20": round(hi20, 3), "fundsRate": round(rate, 3),
+            "chg5": round(chg5, 3), "min": GAUGE_MIN, "max": GAUGE_MAX,
+            "zones": [GAUGE_CUTS, GAUGE_HOLD, GAUGE_STRONG], "updated": d2}
+
+
+def clean_fedwatch(raw):
+    """Passes the hand-typed FedWatch box through only if it is usable."""
+    try:
+        pct = float(raw["hike25"])
+        if not 0 <= pct <= 100:
+            return None
+        return {"meeting": str(raw.get("meeting", "")), "hike25": round(pct, 1),
+                "source": str(raw.get("source", "CME FedWatch"))[:80], "updated": str(raw.get("updated", ""))[:10]}
+    except (KeyError, TypeError, ValueError, AttributeError):
+        return None
+
+
 # Blow-off check thresholds. Change these numbers to make the check stricter or looser.
 BLOWOFF_STRETCH = 25.0   # percent above the 200-day average
 BLOWOFF_SPEED = 15.0     # percent gained in 20 trading days
@@ -327,6 +388,7 @@ def main():
     real_yield = attempt("Real yield (FRED DFII10)", need_key("DFII10"))
     dollar = attempt("Dollar index (FRED DTWEXBGS)", need_key("DTWEXBGS"))
     funds = attempt("Fed funds rate (FRED DFF)", need_key("DFF"))
+    two_year = attempt("2-year Treasury yield (FRED DGS2)", need_key("DGS2"))
     gold_result = attempt("Gold price (xaus.com, then Yahoo)", gold_prices)
     gold, gold_source = gold_result if gold_result else (None, "")
     headlines = attempt("News headlines (Google News)", news)
@@ -349,6 +411,8 @@ def main():
         series["real_yield"] = last_n(real_yield)
     if dollar:
         series["dollar"] = last_n(dollar)
+    if two_year:
+        series["two_year"] = last_n(two_year)
 
     judges = {
         "real_yield": (real_yield, judge_real_yield),
@@ -407,6 +471,8 @@ def main():
         "info": info,
         "cycle": manual.get("cycle", {}),
         "signals": signals,
+        "fedgauge": judge_fed_gauge(two_year, funds),
+        "fedwatch": clean_fedwatch(manual.get("fedwatch")),
         "blowoff": judge_blowoff(gold) if gold else None,
         "events": manual.get("events", []),
         "headlines": all_headlines[:30],
