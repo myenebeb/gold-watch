@@ -98,6 +98,20 @@ a { color: var(--accent); text-underline-offset: 2px; }
 .bo-check .bt { font-size: 12px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 4px 8px; align-items: center; }
 .bo-check.hit .bv { color: var(--bear); }
 .bo-note { font-size: 13px; color: var(--muted); }
+.fg-dial { display: flex; flex-direction: column; gap: 6px; padding: 4px 0 2px; }
+.fg-wrap { position: relative; padding: 5px 0; }
+.fg-track { display: flex; height: 12px; border-radius: 99px; overflow: hidden; }
+.fg-track span { display: block; height: 100%; }
+.fg-needle { position: absolute; top: 0; width: 4px; height: 22px; margin-left: -2px; border-radius: 2px; background: var(--ink); box-shadow: 0 0 0 2px var(--surface); }
+.fg-labels { display: flex; font-size: 11px; letter-spacing: 0.04em; text-transform: uppercase; color: var(--muted); }
+.fg-labels span { min-width: 0; }
+.fw { display: flex; flex-direction: column; gap: 8px; border-top: 1px solid var(--line); padding-top: 14px; }
+.fw-top { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; }
+.fw-top .fv { font-family: var(--font-data); font-size: 28px; font-variant-numeric: tabular-nums; line-height: 1.1; }
+.fw-top .fl { font-size: 14px; min-width: 0; flex: 1 1 240px; }
+.fw-bar { height: 10px; border-radius: 99px; background: var(--mute-bg); overflow: hidden; }
+.fw-fill { height: 100%; background: var(--bear); border-radius: 99px; }
+.fw-meta { font-size: 12px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 4px 8px; align-items: center; }
 
 .chips { display: flex; flex-wrap: wrap; gap: 6px; }
 .chip { font: inherit; font-size: 13px; padding: 5px 12px; border: 1px solid var(--line); border-radius: 99px; background: var(--surface); color: var(--ink); cursor: pointer; }
@@ -168,6 +182,14 @@ a { color: var(--accent); text-underline-offset: 2px; }
       <p class="summary" id="sigSummary">Loading signals.</p>
     </div>
     <div class="signals" id="signals"></div>
+  </section>
+
+  <section class="sec" id="fedSec" aria-labelledby="h-fed" hidden>
+    <div class="sec-head">
+      <h2 id="h-fed">Fed hike gauge</h2>
+      <p>How many rate hikes are traders expecting? The dial reads the gap between the 2-year Treasury yield and today's Fed rate. The box under it holds the chance of a hike at the next meeting.</p>
+    </div>
+    <div class="bo" id="fed"></div>
   </section>
 
   <section class="sec" id="boSec" aria-labelledby="h-bo" hidden>
@@ -400,7 +422,66 @@ a { color: var(--accent); text-underline-offset: 2px; }
     box.append(grid, h("p", { class: "bo-note", text: "The first three checks count toward a blow-off. The fourth only matters after gold has been stretched, and it is what turns the status to “Possible top is in”. Updated " + fmtDate(b.updated) + "." }));
   }
 
-  function renderAll() { renderHeader(); renderCycle(); renderSignals(); renderBlowoff(); renderEvents(); renderNews(); }
+  var FG_PILL = { strong: "bear", hikes: "warn", easing: "turn", hold: "mute", cuts: "bull" };
+  function renderFed() {
+    var g = D.fedgauge, w = D.fedwatch, sec = $("fedSec"), box = $("fed");
+    var hasG = g && typeof g.gap === "number", hasW = w && typeof w.hike25 === "number";
+    if (!hasG && !hasW) { sec.hidden = true; return; }
+    sec.hidden = false; clear(box);
+
+    if (hasG) {
+      var span = g.max - g.min, pos = Math.max(0, Math.min(100, ((g.gap - g.min) / span) * 100));
+      var z = g.zones, edges = [g.min, z[0], z[1], z[2], g.max];
+      var names = ["Cuts", "Hold", "Hikes", "Strong hikes"], fills = ["var(--bull-bg)", "var(--mute-bg)", "var(--warn-bg)", "var(--bear-bg)"];
+      var mix = ["var(--bull)", "var(--mute)", "var(--warn)", "var(--bear)"];
+      var track = h("div", { class: "fg-track", role: "img", "aria-label": "Dial from cuts priced to hikes strongly priced. The gap is " + g.gap.toFixed(2) + " points." });
+      var labels = h("div", { class: "fg-labels" });
+      for (var i = 0; i < 4; i++) {
+        var wd = ((edges[i + 1] - edges[i]) / span) * 100;
+        track.append(h("span", { style: "width:" + wd.toFixed(2) + "%;background:" + fills[i] + ";background:color-mix(in srgb," + mix[i] + " 55%," + fills[i] + ")" }));
+        labels.append(h("span", { style: "width:" + wd.toFixed(2) + "%", text: names[i] }));
+      }
+      box.append(
+        h("div", { class: "bo-top" },
+          h("span", { class: "pill " + (FG_PILL[g.status] || "mute"), text: g.label }),
+          h("p", { text: g.reading })),
+        h("div", { class: "fg-dial" },
+          h("div", { class: "fg-wrap" }, track, h("div", { class: "fg-needle", style: "left:" + pos.toFixed(2) + "%" })),
+          labels));
+      var cells = h("div", { class: "bo-checks" },
+        h("div", { class: "bo-check" }, h("span", { class: "bl", text: "2-year Treasury yield" }),
+          h("span", { class: "bv", text: g.twoYear.toFixed(2) + "%" }),
+          h("span", { class: "bt", text: "20-day high " + g.twoYearHigh20.toFixed(2) + "%" })),
+        h("div", { class: "bo-check" }, h("span", { class: "bl", text: "Effective Fed funds rate" }),
+          h("span", { class: "bv", text: g.fundsRate.toFixed(2) + "%" }),
+          h("span", { class: "bt", text: "What the Fed charges today" })),
+        h("div", { class: "bo-check" + (g.gap >= z[1] ? " hit" : "") }, h("span", { class: "bl", text: "Gap (2-year minus Fed rate)" }),
+          h("span", { class: "bv", text: (g.gap > 0 ? "+" : "") + g.gap.toFixed(2) }),
+          h("span", { class: "bt", text: "About " + Math.abs(Math.round(g.steps)) + " quarter-point " + (g.gap < 0 ? "cuts" : "hikes") })));
+      if (D.series && D.series.two_year && D.series.two_year.length > 1) {
+        cells.append(h("div", { class: "bo-check" }, h("span", { class: "bl", text: "2-year yield, last 60 days" }), spark(D.series.two_year)));
+      }
+      box.append(cells);
+    }
+
+    if (hasW) {
+      var age = w.updated ? daysAgo(w.updated) : 99, stale = age > 5;
+      var meet = w.meeting ? fmtDate(w.meeting) + " meeting" : "the next meeting";
+      box.append(h("div", { class: "fw" },
+        h("div", { class: "fw-top" },
+          h("span", { class: "fv", text: w.hike25.toFixed(0) + "%" }),
+          h("span", { class: "fl", text: "Chance of a quarter-point hike at the " + meet })),
+        h("div", { class: "fw-bar", role: "img", "aria-label": w.hike25.toFixed(0) + " percent chance of a hike" },
+          h("div", { class: "fw-fill", style: "width:" + Math.max(0, Math.min(100, w.hike25)) + "%" })),
+        h("div", { class: "fw-meta" },
+          h("span", { text: w.source + ". Typed by hand" + (w.updated ? ", " + fmtDate(w.updated) : "") + "." }),
+          h("span", { class: "pill " + (stale ? "warn" : "mute"), text: stale ? "Out of date, update in manual.json" : "Current" }))));
+    }
+
+    box.append(h("p", { class: "bo-note", text: "The gap is a rough guide. The 2-year yield also includes extra pay for holding a bond for two years, so the hike count is approximate. Higher hike expectations are usually a headwind for gold." }));
+  }
+
+  function renderAll() { renderHeader(); renderCycle(); renderSignals(); renderFed(); renderBlowoff(); renderEvents(); renderNews(); }
 
   function load() {
     fetch("data.json?t=" + Date.now(), { cache: "no-store" }).then(function (r) {
