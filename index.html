@@ -98,6 +98,17 @@ a { color: var(--accent); text-underline-offset: 2px; }
 .bo-check .bt { font-size: 12px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 4px 8px; align-items: center; }
 .bo-check.hit .bv { color: var(--bear); }
 .bo-note { font-size: 13px; color: var(--muted); }
+.bw-meter { display: grid; grid-template-columns: repeat(9, 1fr); gap: 4px; }
+.bw-seg { height: 10px; border-radius: 3px; background: var(--mute-bg); }
+.bw-seg.on { background: var(--bull); }
+.bw-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 330px), 1fr)); gap: 0 28px; border-top: 1px solid var(--line); }
+.bw-row { display: flex; gap: 10px; align-items: flex-start; padding: 11px 0; border-bottom: 1px solid var(--line); min-width: 0; }
+.bw-mark { flex: none; width: 22px; height: 22px; border-radius: 50%; display: grid; place-items: center; font-size: 12px; font-weight: 700; background: var(--mute-bg); color: var(--mute); }
+.bw-row.met .bw-mark { background: var(--bull-bg); color: var(--bull); }
+.bw-txt { flex: 1 1 0; min-width: 0; display: flex; flex-direction: column; gap: 2px; }
+.bw-txt b { font-weight: 600; font-size: 14px; }
+.bw-txt span { font-size: 12px; color: var(--muted); }
+.bw-tags { flex: none; display: flex; flex-direction: column; align-items: flex-end; gap: 4px; }
 .fg-dial { display: flex; flex-direction: column; gap: 6px; padding: 4px 0 2px; }
 .fg-wrap { position: relative; padding: 5px 0; }
 .fg-track { display: flex; height: 12px; border-radius: 99px; overflow: hidden; }
@@ -198,6 +209,14 @@ a { color: var(--accent); text-underline-offset: 2px; }
       <p>Is gold in the last, fastest stretch of a rally? This reads the price only. It shows conditions and cannot predict a top.</p>
     </div>
     <div class="bo" id="bo"></div>
+  </section>
+
+  <section class="sec" id="bwSec" aria-labelledby="h-bw" hidden>
+    <div class="sec-head">
+      <h2 id="h-bw">Bottom watch</h2>
+      <p>Are the conditions that usually show up near a long-term low in gold appearing? It counts nine of them. It cannot tell you a bottom is in.</p>
+    </div>
+    <div class="bo" id="bw"></div>
   </section>
 
   <section class="sec" aria-labelledby="h-ev">
@@ -422,6 +441,70 @@ a { color: var(--accent); text-underline-offset: 2px; }
     box.append(grid, h("p", { class: "bo-note", text: "The first three checks count toward a blow-off. The fourth only matters after gold has been stretched, and it is what turns the status to “Possible top is in”. Updated " + fmtDate(b.updated) + "." }));
   }
 
+  var BW_PILL = { none: "mute", early: "warn", building: "warn", forming: "bull" };
+  function renderBottom() {
+    var sec = $("bwSec"), box = $("bw");
+    if (!D.signals || !D.signals.length) { sec.hidden = true; return; }
+    function sig(id) { for (var i = 0; i < D.signals.length; i++) if (D.signals[i].id === id) return D.signals[i]; return null; }
+    function improving(s) { return !!s && (s.status === "turning" || s.status === "bullish"); }
+    function fromSignal(id, label, manual, steady) {
+      var s = sig(id), st = s ? (STATUS[s.status] || STATUS.neutral).label : "No data";
+      var old = manual && s && s.updated && daysAgo(s.updated) > STALE_DAYS;
+      // steady = true means "not bearish" is enough (used for central bank buying, which acts as a floor)
+      var met = steady ? (!!s && s.status !== "bearish") : improving(s);
+      return { label: label, manual: manual, met: met, detail: "Signal reads " + st + (old ? " (note is out of date)" : "") };
+    }
+    var g = D.fedgauge, gold = (D.series && D.series.gold) || [];
+    var gaugeOk = !!g && (g.status === "easing" || g.status === "hold" || g.status === "cuts");
+    var stall = { label: "Gold has stopped making new lows", manual: false, met: false, detail: "Not enough price history" };
+    if (gold.length >= 30) {
+      var lo = Math.min.apply(null, gold), since = gold.length - 1 - gold.lastIndexOf(lo);
+      stall.met = since >= 10;
+      stall.detail = since === 0 ? "The latest close is the lowest of the last " + gold.length + " days" : since + " day" + (since > 1 ? "s" : "") + " since the lowest close (need 10 or more)";
+    }
+    var conds = [
+      fromSignal("real-yields", "Real yields have peaked", false),
+      fromSignal("dollar", "The dollar is rolling over", false),
+      { label: "Hike pricing is easing", manual: false, met: gaugeOk, detail: g ? "Hike gauge reads " + g.label : "No data" },
+      stall,
+      fromSignal("price-levels", "Gold is back above its 20-day average", false),
+      fromSignal("china-central-banks", "Central banks are still buying", true, true),
+      fromSignal("etf-flows", "ETF flows are turning to inflows", true),
+      fromSignal("positioning", "Speculative positions are flushed out", true),
+      fromSignal("stock-stress", "Forced selling from stocks has ended", true)
+    ];
+    var n = conds.filter(function (c) { return c.met; }).length;
+    var gates = conds[0].met && conds[2].met;
+    var status, label, tail;
+    if (n >= 5 && gates) { status = "forming"; label = "Bottom forming"; }
+    else if (n >= 5) { status = "building"; label = "Building, key drivers not turned"; }
+    else if (n >= 3) { status = "early"; label = "Early signs"; }
+    else { status = "none"; label = "No bottom signs"; }
+    var missing = [];
+    if (!conds[0].met) missing.push("real yields peaking");
+    if (!conds[2].met) missing.push("hike pricing easing");
+    tail = gates ? "The two most important ones, real yields and hike pricing, have both turned."
+      : "The two most important ones are still missing: " + missing.join(" and ") + ".";
+    clear(box); sec.hidden = false;
+    var meter = h("div", { class: "bw-meter", role: "img", "aria-label": n + " of 9 conditions met" });
+    for (var i = 0; i < 9; i++) meter.append(h("span", { class: "bw-seg" + (i < n ? " on" : "") }));
+    var list = h("div", { class: "bw-list" });
+    conds.forEach(function (c) {
+      list.append(h("div", { class: "bw-row" + (c.met ? " met" : "") },
+        h("span", { class: "bw-mark", "aria-hidden": "true", text: c.met ? "✓" : "–" }),
+        h("div", { class: "bw-txt" }, h("b", { text: c.label }), h("span", { text: c.detail })),
+        h("div", { class: "bw-tags" },
+          h("span", { class: "pill " + (c.met ? "bull" : "mute"), text: c.met ? "Met" : "Not yet" }),
+          h("span", { class: "pill mute", text: c.manual ? "By hand" : "Auto" }))));
+    });
+    box.append(
+      h("div", { class: "bo-top" },
+        h("span", { class: "pill " + (BW_PILL[status] || "mute"), text: label }),
+        h("p", { text: n + " of 9 conditions are met. " + tail })),
+      meter, list,
+      h("p", { class: "bo-note", text: "These are conditions seen near past gold lows, not a forecast. Gold can make new lows even when several are met, and a bottom is usually only clear afterward. Missing data counts as not met. To mark a by-hand condition as improving, set that signal's status to turning or bullish in manual.json. Central bank buying counts as met unless its signal is bearish. Five or more with real yields and hike pricing both turned shows Bottom forming." }));
+  }
+
   var FG_PILL = { strong: "bear", hikes: "warn", easing: "turn", hold: "mute", cuts: "bull" };
   function renderFed() {
     var g = D.fedgauge, w = D.fedwatch, sec = $("fedSec"), box = $("fed");
@@ -481,7 +564,7 @@ a { color: var(--accent); text-underline-offset: 2px; }
     box.append(h("p", { class: "bo-note", text: "The gap is a rough guide. The 2-year yield also includes extra pay for holding a bond for two years, so the hike count is approximate. Higher hike expectations are usually a headwind for gold." }));
   }
 
-  function renderAll() { renderHeader(); renderCycle(); renderSignals(); renderFed(); renderBlowoff(); renderEvents(); renderNews(); }
+  function renderAll() { renderHeader(); renderCycle(); renderSignals(); renderFed(); renderBlowoff(); renderBottom(); renderEvents(); renderNews(); }
 
   function load() {
     fetch("data.json?t=" + Date.now(), { cache: "no-store" }).then(function (r) {
