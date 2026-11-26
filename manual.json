@@ -3,8 +3,8 @@
   "info": {
     "record": 5600,
     "recordDate": "Jan 29, 2026",
-    "low": 3513.54,
-    "lowDate": "Nov 20, 2026"
+    "low": 3469.30,
+    "lowDate": "Nov 25, 2026"
   },
   "cycle": {
     "phase": 4,
@@ -14,9 +14,9 @@
   "fedwatch": {
     "_help": "Type the chance of a quarter-point hike from CME FedWatch (cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html), then the date. The page asks you to refresh it after 5 days.",
     "meeting": "2026-12-09",
-    "hike25": 93,
-    "source": "CME FedWatch, as reported by Reuters",
-    "updated": "2026-11-23"
+    "hike25": 98,
+    "source": "Fed funds futures (RateWatch), after the Nov 25 PCE release",
+    "updated": "2026-11-25"
   },
   "signals": [
     {
@@ -33,8 +33,8 @@
       "id": "fed-path", "order": 3, "name": "Fed rate path", "auto": "fed",
       "watch": "The tone after the Dec 9 decision. Any hint that hikes are ending or pausing would ease the pressure.",
       "status": "bearish",
-      "reading": "A hike on Dec 9 is almost fully priced in. The October minutes pointed to more hikes, and Governor Waller backs tightening.",
-      "updated": "2026-11-21"
+      "reading": "A hike on Dec 9 is priced at about 98%. Core PCE rose 0.3% for a third month and 3.3% over the year on Nov 25, and Q3 GDP was revised up to 4.3%. Futures put roughly 57 to 60% on another hike at the Jan 27 meeting.",
+      "updated": "2026-11-25"
     },
     {
       "id": "china-central-banks", "order": 4, "name": "China and central banks",
@@ -61,16 +61,19 @@
       "id": "stock-stress", "order": 7, "name": "Stock market stress",
       "watch": "Stocks stabilising. Forced selling usually fades with them.",
       "status": "bearish",
-      "reading": "Asian shares were heading for their worst week since 2020 on Nov 20. Investors are selling gold to meet margin calls, so gold is falling together with stocks.",
-      "updated": "2026-11-21"
+      "reading": "Stocks were lower again before the open on Nov 25 and the VIX was near 31, up from 26 the day before. Asian shares had their worst week since 2020 on Nov 20, and forced selling pulled gold down with stocks.",
+      "updated": "2026-11-25"
     },
     {
       "id": "price-levels", "order": 8, "name": "Price levels", "auto": "price", "series": "gold",
       "watch": "A move back above the broken $4,000 area would be the first sign the downtrend is ending.",
-      "fallback": { "status": "bearish", "reading": "Spot hit $3,513.54 on Nov 20, the lowest since September 2025. The June low near $3,955 and the $4,000 level have both broken. Analysts name $3,500 to $3,600 next, and some warn of $3,200.", "updated": "2026-11-21" }
+      "fallback": { "status": "bearish", "reading": "Spot fell to about $3,469 on Nov 25, below the $3,500 area and its lowest in more than a year. The $4,000 level and the June low near $3,955 broke earlier. Kitco names $3,431 and then $3,400 as the next supports.", "updated": "2026-11-25" }
     }
   ],
   "events": [
+    { "date": "2026-11-25", "cat": "Macro", "impact": "bearish", "headline": "Core PCE rises 3.3% over the year, above the 3.2% forecast", "note": "Core was 0.3% for the month, the third month in a row at that pace. Headline PCE was 3.8%, as expected. Q3 GDP was revised up to 4.3%. December hike odds stayed near 98%." },
+    { "date": "2026-11-25", "cat": "Price", "impact": "bearish", "headline": "Gold falls below $3,500 to about $3,469", "note": "Down about 2% on the day as strong growth and sticky inflation reinforced hike bets. Kitco names $3,431 and $3,400 as the next supports." },
+    { "date": "2026-11-23", "cat": "Macro", "impact": "bullish", "headline": "Nvidia reinstates Jensen Huang as CEO and gold rebounds to about $3,650", "note": "Tech stocks rallied and forced selling eased for a day. The Fed hike path did not change, and gold gave the bounce back within two days." },
     { "date": "2026-12-09", "cat": "Fed", "impact": "mixed", "headline": "Fed decision, a hike is widely expected", "note": "A December hike is close to fully priced in. The tone of the statement and press conference matters more than the move itself." },
     { "date": "2026-11-20", "cat": "Price", "impact": "bearish", "headline": "Gold hits $3,513, the lowest since September 2025", "note": "Worst week in eight months, down about 9%. Silver, copper, stocks and crypto fell too." },
     { "date": "2026-11-20", "cat": "Macro", "impact": "bearish", "headline": "Asian shares head for their worst week since 2020", "note": "Forced selling is spreading across assets, and investors are selling gold to raise cash." },
