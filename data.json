@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-26T07:29Z",
- "refreshed": "2026-11-26T07:29Z",
+ "generated": "2026-11-26T07:59Z",
+ "refreshed": "2026-11-26T07:59Z",
  "today": "2026-11-26",
  "health": [
   {
@@ -373,6 +373,20 @@
  ],
  "headlines": [
   {
+   "title": "LME approves listing of Tsingshan’s Indonesian aluminum brand - Mining.com",
+   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPVmtoSElkWW1ZcnNWOEJ2cEZzcndaalpPb1JKa1NmaDNGLWhjOVdXNVpjVTNJaEREQnNlcGR0SG1ORzJLRWxmWTJnam1YUVd1d0V3eUhmV1BTN3g5WWJINkZhaXVERGdXZmFQNUFUbHR0djZzRzZURkhjZzk3N29LZTJjQUY4VFdJMDZRc0lBZFdXZw?oc=5",
+   "cat": "Fed",
+   "source": "Mining.com",
+   "when": "2026-11-26T07:45Z"
+  },
+  {
+   "title": "Gold Edges lower as US inflation data fuels bets for rate hikes - Moneyweb",
+   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPeG1oaFlTc2FmVVNMb0JTUGplcEs5VElUQnlFMFh0b29TRXBkSE0yME4tSllQQ18zQjBXTV8zTWh6NGU0Yk9vaEpja1gyaXdFc040TTl4Y0IxeXA2dXlGcU5TUnpGU1JCMEQ5VDE4N1cxT1ZzWE9VcGNwNFhRa2xJdHNJdlZUbzdXQ0draUhFNUtsdHNWSGFubTY5OHZrSmVE?oc=5",
+   "cat": "Fed",
+   "source": "Moneyweb",
+   "when": "2026-11-26T07:30Z"
+  },
+  {
    "title": "Gold Edges Lower as US Inflation Data Fuels Bets for Rate Hikes - Bloomberg.com",
    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNWk5iY21FejJMUDVfS2h4ekdoUnQ1RndSalFWS2pkZzJZY1AwSXRnY1otVEdsMUdRVWZJV0NKSUxEM3Boc2VlQXNMMWkweGxJSWVGaFJHcC1qWTk0WTdIbXR0Z3VNQ2N2R054YXZMa1I2eVk4RjU5T09FelF5ZC1KdGJRYnV5bFdvMjJoRzBpMjNoUDkzMDJiTmdvejdOMF85Vy1JZU16eEI1M3VzVlBNa0RyMjk?oc=5",
    "cat": "Fed",
@@ -437,7 +451,7 @@
   },
   {
    "title": "Gold Recovers From Intraday Low: Is The Yellow Metal Losing Its Safe-Haven Status? - TradingView",
-   "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPRW8xWTR4RndOY3p4NE50a0dOdG1uWTFxLUk5MUp4akt0cTIwVWlKVXpEdVVFOHYxMkZRcGJESkdrcjJJVjVNXzV6d2lGY1RjallybkkxNTFjcjV4UnJINGhublNtRnRuMnJmdkVFM1pfYzlTV3MwYjVmLWE4X3ZBS0VEN0Q2RmhTX2dKTGRNOUQ1Y0t5cEFfaTFFSVA4TUtTMmhpRFU3ekg2OUNGZWtOZ1BCbkRTeE5nMFI4SFI1MUZNTk9SZ1lTOWY0N3hiOFNUSG9rRHdPZHc?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNSHFQenoycXpKRWdRWVR2bWhlX0ZMaC1ZbEdkQncxVVJ4OVoza3VaRFU2WXNjcFY0Z2NLek5UcWlDTUdadTg2b19ZUG8xbk13aVpKVks3X3JPNmQ1SHVsS0lsM1hqYmZsVTdfc21CcmtjWU1BdU1ucVp5TTlGdEdCMk13OUhyMmNIUUVQczZuQTdGb2VmUEtHVksxdmxnSmJpUDc1TmdDYWZDWEtQQV92S19wZGJFQkd3NWhCQUdiR3B5cldOU1RIMlZ6M1ZZNGVMT0ZNbjlONUQzUm5fem1adHh4YUk1M0o1M0VneDhIaDVUZw?oc=5",
    "cat": "Fed",
    "source": "TradingView",
    "when": "2026-11-26T05:36Z"
@@ -464,18 +478,18 @@
    "when": "2026-11-26T04:51Z"
   },
   {
+   "title": "Gold struggles to extend bounce from 15-month low as Fed hike bets, USD uptick cap gains - FXStreet",
+   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPSDZGRlJPd3FENDIyc2tkWjZqMzNXbVV4eTN0WEVrY0Y5cGhVSkJhUzF6Um1FZ01pTC1yN0kxRUFnUklELXpOQ0xpVXNSRmZRbzhlOUg1VENNa2pBc0dRU21rU3dMdmtSZUttNmgwSzFsUXUySVhTLTlVSllDY3piaTZ0YnBFXzFVR1k2OEVhYTdVWUx4VWpKZUExVWtTRHZPWlZubXlFM3F1dnZ2OFV1NkpMQWRva25rZzNTNkM0V1R6X1M4YWl4WTFB?oc=5",
+   "cat": "Fed",
+   "source": "FXStreet",
+   "when": "2026-11-26T04:50Z"
+  },
+  {
    "title": "Sharp drop in gold prices! A first in 14 months. - Haberler.com",
    "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNS3dHWTUyS2sxUnN6RnIzTndvc3RSVHlHX24zRU0ySVctZVNGR3FjeUZSMTR1QVViZ3lRVUJVUHRYU1JKMEdxWHZ2RmctbnkwTXFLeTRBWURmd2N1S0xLUU9lZVR6S1p4Q18tRVhvclE0VEdSNjgxd1dFMmFxSkFwMkJXV2pOUQ?oc=5",
    "cat": "Fed",
    "source": "Haberler.com",
    "when": "2026-11-26T04:50Z"
-  },
-  {
-   "title": "LME approves listing of Tsingshan’s Indonesian aluminum brand - Mining.com",
-   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPVmtoSElkWW1ZcnNWOEJ2cEZzcndaalpPb1JKa1NmaDNGLWhjOVdXNVpjVTNJaEREQnNlcGR0SG1ORzJLRWxmWTJnam1YUVd1d0V3eUhmV1BTN3g5WWJINkZhaXVERGdXZmFQNUFUbHR0djZzRzZURkhjZzk3N29LZTJjQUY4VFdJMDZRc0lBZFdXZw?oc=5",
-   "cat": "Fed",
-   "source": "Mining.com",
-   "when": "2026-11-26T04:42Z"
   },
   {
    "title": "Gold at $8,000 an ounce? Why the next rally may be about the US dollar, not the precious metal - Livemint",
@@ -492,11 +506,25 @@
    "when": "2026-11-26T04:27Z"
   },
   {
+   "title": "Gold Price Forecast: XAU/USD struggles below $3,600 amid Thanksgiving light trading - FXStreet",
+   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOYXhUOTE4OUlfNVJEaGpJMmM5ZVh6My1vUFBMMnhWRWU5WWY5Qi1wZkY5djVJSHdmNVFPUnptV3VsbEVUMDk0VEs1UkdiUktjYmJWWWRrNmw4WGxOSmZHdWViQ3FSYklMS3hsbWpEa1gxTS0tSVU4RmJvbGtDZ3dfNEZqQ1pENGZiM1h6QVYyaWFiVW9wd1hjVlN2V24yYmlVSC1nVHRrbEUwQmFuSjVGZXR0OUVpTnpCbmkyZEJWLTJUckI0S2Uw?oc=5",
+   "cat": "Fed",
+   "source": "FXStreet",
+   "when": "2026-11-26T04:26Z"
+  },
+  {
    "title": "Gold steadies after hitting over 1-year low; Fed outlook in focus - bfsi.economictimes.indiatimes.com",
    "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQTVMwNHVObnRIaURzN0Fnc3VtUEF2amhQbld2ZGozdDV2Vmt3c0VXdWZ6Sy04WUFoMHZFaWhiN24xOUExWDIzZFpic1MzQlktbUtjcHFRUEozaW1ZMDBmbmdaYzk5cUdEc2wtZ2FFWE1FWUtMMm1PSkd3VnJyczlzWEZrSThiN0tyZUFOWWJJYWZYdnhNY1U2MDdEdTY0bkVudmxKZHcxbGZwQUhoQzJFS1R4N3pvd2ZrbW5xVjVKZHRieGdNWHgwRtIByAFBVV95cUxQTVMwNHVObnRIaURzN0Fnc3VtUEF2amhQbld2ZGozdDV2Vmt3c0VXdWZ6Sy04WUFoMHZFaWhiN24xOUExWDIzZFpic1MzQlktbUtjcHFRUEozaW1ZMDBmbmdaYzk5cUdEc2wtZ2FFWE1FWUtMMm1PSkd3VnJyczlzWEZrSThiN0tyZUFOWWJJYWZYdnhNY1U2MDdEdTY0bkVudmxKZHcxbGZwQUhoQzJFS1R4N3pvd2ZrbW5xVjVKZHRieGdNWHgwRg?oc=5",
    "cat": "Fed",
    "source": "bfsi.economictimes.indiatimes.com",
    "when": "2026-11-26T04:04Z"
+  },
+  {
+   "title": "【TMGM Financial Recap】Over $150 Gold Rebound After a Plunge of More Than 3%: U.S. Inflation Compounds Pressure as Markets Hope for a Bottom! - www.tmgm.com",
+   "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQWlRnaW9TQzFObGVIak1hbWlMSEFybjJnQ2tiaUdUWHg3TU95Q0ZaUkhRcGx1cXJRdWRWTV95XzR5a0Z1YmNVRGVHN0ViVDhoaE1tS0NFLUh2UFg2VkUxWUlMcElndUZMSHJIOFZWOHc4N3RNMkRzdVJHczc0VU11Nw?oc=5",
+   "cat": "Fed",
+   "source": "www.tmgm.com",
+   "when": "2026-11-26T04:01Z"
   },
   {
    "title": "Gold falls again amid accelerating inflation in the United States and expectations of another Fed rate hike - Українські Національні Новини (УНН)",
@@ -534,25 +562,11 @@
    "when": "2026-11-26T02:55Z"
   },
   {
-   "title": "Is gold still a safe haven? - The Globe and Mail",
-   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQeFJMNmRyNjhxdmtNcTJsUXR6ZDk1cjlZejJGNmhZd0Z5cXhIRnN4TEdoZDlTeEd6ZndJYURCR1hUelQtdUxCXzB2MWg5MVFWZ0ZPVXJUODVmeEtmZWo4aTFOLTBPZmpDTDlZSUZ3RDhGUVRnUE5HOUdwd21RWUtjelFESTczRFBEYlNIT09vRkx2X2Z6Qm1pZm0wanVON2ZCa3VfY1BFZmZmNnNFRzhCTkhR?oc=5",
-   "cat": "Geopolitics",
-   "source": "The Globe and Mail",
-   "when": "2026-11-26T02:52Z"
-  },
-  {
    "title": "Gold prices fall sharply, with the prospect of continued Fed interest rate hikes putting pressure on prices. - Vietnam.vn",
    "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOTnc1X0diZUxPOWhiMjJoOWQtdUxzQWE4WDJaaVBpNUJTYlJfR2RJS21ndHBQOFJDNUdiWUc5Y0l5S3BmcGJnQXh2Ujd4MTNrbjJkQ1pDc20tUExJRzkyS2FTSmFVRU4yNWpueF81N1c0RUVrdEl3LXp3Nkc3LTluaGFPWEVXRWZ1b2lILVBTaHE?oc=5",
    "cat": "Fed",
    "source": "Vietnam.vn",
    "when": "2026-11-26T02:50Z"
-  },
-  {
-   "title": "Silver (XAG) Forecast: Fed Rate Hike Outlook Keeps Sellers in Control - FXEmpire",
-   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQWFk3RDBWLXc2emI2YkZnczZxcTBqYkZjSk5VcHJkR0o0b0UyaF9WVVRhTVNlSVNKZ3JuS1lSdG9zVGRQSzRIUmpYRW9IbmRKMWQ4MkMxdXljbmUwcHRpdFA5dUFFajNIbmxUOUpOeXBJWU9Mb0lONmI3Q1hUc0FQMlgtbXQ4YVZ3WFk4Z2JpWUVwZWE1TXpieDdTZkIydl9uWVhaQ2tKRXBPMWhsTzNjR1QzSW1NQnQt?oc=5",
-   "cat": "Fed",
-   "source": "FXEmpire",
-   "when": "2026-11-26T02:25Z"
   },
   {
    "title": "Gold edges lower as US inflation data fuels bets for rate hikes - The Business Times",
@@ -567,20 +581,6 @@
    "cat": "Fed",
    "source": "BigGo Finance",
    "when": "2026-11-26T02:05Z"
-  },
-  {
-   "title": "Why America’s Goldilocks Economy is Bad News for Bitcoin and Gold - CryptoRank",
-   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNLTI4UTh4N3dqVmRiamcxaC1DVG9TNmh6QVY3d3dyM1gwQmh5Wi1pRkdnUHc4TUg1ZGVwWEFsd0xNSHU3b3N1SmRvVWpuMkQ0c0FQNVhzTVJjYnRHTlcyWUQ2SC1BOWpSSWUxaGlIQWVKbWpvc3Z3R0xMLUxBVHlMNTJSOXJvRnpmQk91eXFrcw?oc=5",
-   "cat": "Fed",
-   "source": "CryptoRank",
-   "when": "2026-11-26T01:58Z"
-  },
-  {
-   "title": "News by CNBC TV18 on TradingView, 2026-11-26 — cnbctv:690f6ed90094b:0 - TradingView",
-   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFAzV0hJTk83Y2dFajRNbi1tR25nVGZqQ1poakdtNmk3YkhqWmdIZUoxOXlJakpFWVJ3TUxWUUd0aVdoSmZ0d0hNX2U0bkdXWDlCTGdfR1RXeFFTalA4UnVpcXNpS281TzA?oc=5",
-   "cat": "Fed",
-   "source": "TradingView",
-   "when": "2026-11-26T01:50Z"
   }
  ],
  "series": {
