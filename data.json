@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-27T13:24Z",
- "refreshed": "2026-11-27T13:24Z",
+ "generated": "2026-11-27T19:05Z",
+ "refreshed": "2026-11-27T19:05Z",
  "today": "2026-11-27",
  "health": [
   {
@@ -37,7 +37,7 @@
   "recordDate": "Jan 29, 2026",
   "low": 3469.3,
   "lowDate": "Nov 25, 2026",
-  "price": 3696.8,
+  "price": 3658.5,
   "priceDate": "2026-11-27",
   "priceSource": "xaus.com spot gold"
  },
@@ -126,7 +126,7 @@
    "watch": "A move back above the broken $4,000 area would be the first sign the downtrend is ending.",
    "series": "gold",
    "status": "bearish",
-   "reading": "Gold last closed at $3,697 on 2026-11-27. The 20-day average is $3,855 and the 50-day average is $4,050. That is 34% below the record near $5,600. Source: xaus.com spot gold.",
+   "reading": "Gold last closed at $3,658 on 2026-11-27. The 20-day average is $3,853 and the 50-day average is $4,050. That is 35% below the record near $5,600. Source: xaus.com spot gold.",
    "updated": "2026-11-27",
    "source": "auto"
   }
@@ -159,13 +159,13 @@
  "blowoff": {
   "status": "none",
   "label": "Not present",
-  "reading": "Gold closed at $3,697 on 2026-11-27, 16.3% below its 200-day average of $4,416. 0 of 3 blow-off conditions are met.",
+  "reading": "Gold closed at $3,658 on 2026-11-27, 17.1% below its 200-day average of $4,416. 0 of 3 blow-off conditions are met.",
   "count": 0,
   "checks": [
    {
     "id": "stretch",
     "label": "Distance above the 200-day average",
-    "value": -16.3,
+    "value": -17.1,
     "limit": 25.0,
     "unit": "%",
     "hit": false,
@@ -174,7 +174,7 @@
    {
     "id": "speed",
     "label": "Gain over the last 20 trading days",
-    "value": -8.3,
+    "value": -9.2,
     "limit": 15.0,
     "unit": "%",
     "hit": false,
@@ -192,7 +192,7 @@
    {
     "id": "reversal",
     "label": "Drop from the 20-day high",
-    "value": 10.2,
+    "value": 11.1,
     "limit": 8.0,
     "unit": "%",
     "hit": true,
@@ -394,25 +394,151 @@
  ],
  "headlines": [
   {
-   "title": "Gold rebounds from 15-month low but Fed risks linger - www.tmgm.com",
-   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPZXM5eVdLZ0l6MzhxUHN0anFjYWZNdzFUblVhYlN0eHI2UjlheWRud0pVVWswNGltZXVVM1VaTzRQOVM0d0plUVJubzNsa1otQ01Ud2dyVDFVa0p4bXZpa0JTaWdrWU55T0FpRWtiajBzeVZvdVBVQ1hjbmR6U2lvay14MWZENUltakhvU29QWlZkQ2JhNE83aE85ZHNWSzNERlY1aG13TFJEWC11SlU4QmR1M0YtN2psMFNlU3d3?oc=5",
+   "title": "Gold pares gains as Fed-hike risks linger, eyes first weekly rise in three weeks - The Economic Times",
+   "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOVURSQ1IxWHBqSHRJVENIUEx1SndtOXhEczJwRU9zdmtYelpuMXRpQ2pTTkt4ZnNkSEJUODBjakZSRnZqYUJmMy1MM0wyaGlDSy10WUtwbkRta1VUNzV4V3c0dlpHc1B0dm9GSEhIek9hTTVCSldqME9QNlF1M2NxV0hFcjlnS0xSN3VWN0Q5V3BIVlR4eThRakJfQldua0t1NDhENy11TXpTeFNjTlNoU0JYcWNZYXVJbEdyTGhjWlBVUXlpMlVDZTVqb0lDN04zc1c1ay1WazkwdkVYbWg1LVJOSVFTWWNS0gHuAUFVX3lxTE5wekFYejFmaXAwbDkyTF9jZzYzUFVualhIVVk4UUM4UzZhS08xV0ZFYklFR2JBdnZxSm5OZTBlUGQ0X0cxZE9KcnFqdEItNHdWYWxLckFMcFNET0duTjlOWkJfS0RaR1V6Yml4U3Z2NGlHcTFtY3JQbjU0ZF82clZ5TjJ0RDFUTHJBT0R3YXo3X0RoekptNS1fYXNpQXZHb1hBUWR4MU5PSzl3Vzc0OEdINk1nUzBRZHhReWtHYm56bl9yVHNyZnFURG10T0NCZm9wWGlMX3BVcEpXWm9ZOWI2NU9GcHBZcHl4WExzYUE?oc=5",
+   "cat": "Macro",
+   "source": "The Economic Times",
+   "when": "2026-11-27T18:39Z"
+  },
+  {
+   "title": "Gold defies surging US Dollar and Treasury yields as bulls target $3,700 - FXStreet",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNTTA5LTNDRTlvTmJpZHZHb3FIMjlGUlpyM0xoWjlZNWREb3lCZ2ZpOVRHUjRVeThzcFRYRVpHalFIV3NUTG91ekFweXVkblA2MUJKUThadVgxSkczRWo2OW5tSWd0Mld1YVFOdHBZUTZ2Z3k3Y0V1d1B2Z3Y3VFduQnhmN0p3OGdhQUotWUFtdjFjeXNDMEtxc3AzZVYxeTMweHM0SUdiT1B4cDE5cG5YYVBLUVk?oc=5",
+   "cat": "Macro",
+   "source": "FXStreet",
+   "when": "2026-11-27T18:19Z"
+  },
+  {
+   "title": "US Dollar Strengthens Against Canada's Loonie Even as Treasury Yields, Gold Prices, Rise - marketscreener.com",
+   "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQSWkwUUZCVmJIUFAxN0VlR1dSRzREbmw3N1dOMjFuNDZscHJ0YUFNMVhYa2dKemtfS3poUzVNR2JkYnYzOFMzLXF0SVQ5UktpTEg3ZTRWdS1SNUxCZEdoblFlM2h0RVdvMnNtUVJkVkdUeXNTX044bG54NmhjWlk5ZzF1bDFIWVJmSXpHcmo4Ukxuc1BvNGdUWTlzNVlQR2JQUTRISU15d3ZkWDM5TzB2UUR2blRqaEhTQlNYUzJkS2hVWjBDeTRTXzkxY2VubVdSb0dtay1B?oc=5",
+   "cat": "Macro",
+   "source": "marketscreener.com",
+   "when": "2026-11-27T18:19Z"
+  },
+  {
+   "title": "Gold’s 15% Slide Raises Rebound Hopes After Waller’s Rate Hike Warnings - Investing.com",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPRHJIMDFnRVM1MXhXelc3ZkF6VVpUUF9GSVdQc19pck1ZVmtjSGdBNDZiOURpQVhBemNtazZKVXlIUjVqRW85OGp2M0YtTkhrdDhxTnFoOHZPN1loc0ItcWlQbTJGOU1oUEQ4Xzg0cUNIUEFZMFJUYW12bUVWa1JZdHFhV2c2RmtNS05TLXpaMGdLdDU4TUdlbVFXTGdkb3lWOXpGM3ZtenBzbzhnNkxFcEgzaw?oc=5",
+   "cat": "Fed",
+   "source": "Investing.com",
+   "when": "2026-11-27T17:57Z"
+  },
+  {
+   "title": "22-Karat Gold Price Today in India; International Markets Recover with Gold Gaining Almost 2 Percent - TopNews",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQUjdVVFNXTWRZemd4RFJ0c20xM01NVzRVMTJmSGZEMUZUcE1vSFNuN2RxMVotRzREbklwR09ERkZFcHhiX0ZscEFySklIbm1qanoycWhCQTFPODRMRk95S0dNZllYOFFlRGNRblpITFlJNHQxX004MGdmc0FTRXB3QVl1eE9OZHNVcmdjejZJWjh2Vm85TU50UFdzcDJOWXVYLV9EcWxmWURzUVNJcGF4ekRSb05oaFBj?oc=5",
+   "cat": "Central banks",
+   "source": "TopNews",
+   "when": "2026-11-27T17:29Z"
+  },
+  {
+   "title": "Gold Price Forecast — XAU/USD ($3,670) $3,880 Upside Target on Rebound From $3,427 Low - TradingNEWS",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNZFc1cGNBYWhNRG1pRG9DQUlCUkE0WXJZTnUyTHV2cVJzZ1ZBSmRGWUhrcnVqV3lCVUNGZXVSVTNiVkdURjRxLWZMZURHY0o0WlZRVmpNLVhiZVNFVWZwZ3NlMnROSU1KV2JNV1hFRmxEbS1xSHpPcnFibEMxYTdzZHk1Wnoxd24xWktMMjlGYnNOM0ViMDdvd2FLWVk1U3VKdmNiUU5TNW85aGFPc3c2U2YySGRpQ0pB?oc=5",
+   "cat": "ETF flows",
+   "source": "TradingNEWS",
+   "when": "2026-11-27T17:17Z"
+  },
+  {
+   "title": "Gold and Silver rally even as a December Fed hike is all but certain - FXStreet",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPUVcydWlkbWhuTkJ6Yzc4ODZtY3F2dlBEUEVsRDhpb1NpanRzaUJYdFk5ZmpnMS1TZXVPR3otWnJYbnVnQ2FiN01CdDNZYUUtS3pKZTJHV1dvaVJia3k0MFktZG5HYjkybjB1aTZMcEctWHd0TzZUeVlFeXRVVjlFUDhFTk9IMDNyOWhfTmZqT1hpdjl4SVdJNVUzeDFUVGJlcmZhRXVnNWhTSkdEbkJHT0lqRDJaUQ?oc=5",
+   "cat": "Fed",
+   "source": "FXStreet",
+   "when": "2026-11-27T17:10Z"
+  },
+  {
+   "title": "Gold’s Biggest Challenge Is No Longer The Fed, Says Economist Robin Brooks – ‘We Are Back To Oil As The Principal Risk Factor For Gold’ - TradingView",
+   "link": "https://news.google.com/rss/articles/CBMimwJBVV95cUxQWUlMRGRkTWdqb2FmUEtHTk93bjlNc1JOaUZic19ST0l1Wk9DZzY2QUFXYVhTQ2ZLMmJVeDhBZFh5TkUxWG9NMXd3aEsyZ1NlRFVKYm9FNDQ0UE83WjFoeFVSOExieWxFeklTRWt5cTc1a2NOQkFDT2pmTDdlVmwxUDdDdVdrUG5Tcmh3WGpDMUtBcWJ0OUZuX05JZE12ZjNwNml4Ti1TWWxiVzBuTVlkYWtWTHNoYl80OXdkNGx0UlhGNUVCQzlnd3Y5eVZyQjRLaUdfaGkzbHoyNDlSZHd2OXJHREhKdkJPWDR2UE5pdlV6d0ZjQWViUWY4c0dSbmdlT19zczNGeUFaSmZHT05PYUFFSzRwNWotU29r?oc=5",
+   "cat": "Fed",
+   "source": "TradingView",
+   "when": "2026-11-27T17:02Z"
+  },
+  {
+   "title": "Gold Steadies as Fed Rate Path and AI Stocks Frame Volatile Week - Bloomberg.com",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQdjBId0RKMFpkWFQ3R3VMeVV3T0VOMEI5dzRuWWZaMGNLVFBtRXZoWjJlWHhsdXVqdGNYT2NNc3ctSU9zdXpCR3ZaSXFENDhwQ1BQa1RqV01palJ3LWcxOWFnRXZFRm40NGRTaU9XYU9yOGF2WXAtV0lxOEdDcWZmSUxfYlZfZENjV3JUX0k5YmstSkk3V1ZWVWpkR1VjdDNzdkF6ZGxSNXpOZ1AxZmlGNThJTE0zUQ?oc=5",
+   "cat": "Fed",
+   "source": "Bloomberg.com",
+   "when": "2026-11-27T16:51Z"
+  },
+  {
+   "title": "Why Is Silver Price Surging Today? Silver Futures Jump 10% as Gold Reclaims $3,600 - Coinpaper",
+   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOZEExUHA3eExlaUpKN1B2a0Q1Vk9zZ184ZDNvZWdvV3R3OFZLRVJzT0xSWmVEMTlWVVlvQ01wcFg4cDhVQnJqeXo0M2pfSHR0NFRrZ0k1MHZCb0JLTThnQTl0ejBVNmNNTUhpQ3d6US04a2hTV1hZZWZIV1hrbW03YzNKV0RqeV9IdXpBVDdyU01DNHQ0aHhxd0FlQnR5ZGV3bWVNR0hJZkpncG8?oc=5",
+   "cat": "Fed",
+   "source": "Coinpaper",
+   "when": "2026-11-27T16:20Z"
+  },
+  {
+   "title": "Gold Rebounds Above $3,660: What Fed Rate Hike Bets Mean Next - Around Prague",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQMjdWOVpKY0FnYUJ1VDNROXRQbmNKczUxOU8xU3MwdkgtSXdTLVN3d0dXWllZclI3N3hFR3p6LWhfWE5sV1EtVmxNWUR5bUdWZk1BbkZUcGx3amQ0dEV3RjV2SWNHUVItRGdRY3B4Y2hBOVJLRzh6RFhFMnJIRmRDY0NPSFF6X2E1VFVzVzJ4alhFUGlXSUNScE5R?oc=5",
+   "cat": "Fed",
+   "source": "Around Prague",
+   "when": "2026-11-27T16:11Z"
+  },
+  {
+   "title": "British Pound rises as BoE hawkishness counters Fed rate hike bets - www.tmgm.com",
+   "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPRWNHcS1aWnZEVndmWFR0MGNkeVk4aXdTVnR3ckpHTzRzRFI5OFBPSmpQaWxEa0ZVVWotaVJrTUFNZkFhbmVvZmpDTndzOHJXYXFtZ0ZPNTdDeHRWdWt1dmJIRlNhZXN2RW44VS02cnVLZ2xBRHliTXVNY1ZHZ1pKMWNwWTh4UXV6YVJmVjEyYU0zQllkdzlGR3BFYVkxT0c2RE04aF9pWjFIX2xsYlZhLTRtR1dTeXprUHlqNWRrWVJ4ZnFYV2Q5TUw5bEk?oc=5",
    "cat": "Fed",
    "source": "www.tmgm.com",
-   "when": "2026-11-27T12:43Z"
+   "when": "2026-11-27T15:40Z"
+  },
+  {
+   "title": "Why Is Gold Up Today? Futures Jump 3.4% to $3,655.70 as Tech Selloff Cools and Shorts Cover - Around Prague",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQQjVkZFhfc08wQWdyM0VSWTUtYlR3ZElSTlowWTBRVmp0NHBzTHRxOWZKYUNyTEFzb0V5eFE2S0owTXM4X0tDRUo2X0VhOG8yTXV0SFU1TlctUjlJUjNPbVFJckpKVTl2WTQtbkNGOFRBTFpVNjNjS2VOdXp1dHlZLUZWVnEyUzM0VENCQWJxQVpxajZTd2RwOGY1c3hCeTJySWJlYW53dFIza21qUklv?oc=5",
+   "cat": "Fed",
+   "source": "Around Prague",
+   "when": "2026-11-27T15:33Z"
+  },
+  {
+   "title": "Dollar Climbs on Higher T-Note Yields and Crude Prices - Barchart.com",
+   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQcHhCZDFlaXNldlVCUkhPVHo5OWFMcXRmeVBZZnV0S09uYXM4OE5idTI3MHV6OHh0TkF2NXZKWGNXUHczYUtZZ0hnWVBRSTNjanJyenN4NjF1LTUyZUdTeTFDekEwakw5Vmk5TjlsaFNwallVREFIQWI0NFB2WUlTWGUxVWxub1BHYkZuQ2hvOW1lZkZjU21rMTMzaEotaTA?oc=5",
+   "cat": "Macro",
+   "source": "Barchart.com",
+   "when": "2026-11-27T15:32Z"
+  },
+  {
+   "title": "Gold Rebounds for the Week, but Fed Rate Hike Fears Keep Bears in Control - Investing.com Canada",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQU1d2TjkwSHEyY3FYVzZVV1FuMVJMWUNhY0ZjRzROX2xiVFNLdVNKaTBvWUFCMjgyUlNPRjhSUDV1QkFnQWY3TENnVW9WcDdlZ2pqT2xsMkhCT1RIcTYySUJuTHpzREdSbUJCYzVWLVJNX0gxcFdZZ0MyOVc0NmRKYUJVZ181bEV4Ym5qbEY0Z3M4aHBYLUFHdGowTGlHQ2JMVVpHUW12OUZraEVKZi1HMGdPVkQzcXc?oc=5",
+   "cat": "Fed",
+   "source": "Investing.com Canada",
+   "when": "2026-11-27T15:20Z"
+  },
+  {
+   "title": "Gold Price Forecast: Fed Rate Hike Bets Threaten the Latest Rebound - FXEmpire",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQMGwwTHhCdV9lNnpVQmhQem10ajFMallFR1lUTTJtNV9ibUZoaG5pZmhHZHZjN3BOOHpJQzItMl8wLUVEREh3YTh3SGE4WWpVYjJ4TWMxUmE2Mi11N0ZMcEQ2LUdFOU5XNU5mckVoNTMtZXJYSHloUlJwME9CR1dfRWRwbDk5eUxLeV82MWx1dldTemlTNUMwSEZ5ZllzVzA1NFMwSU5UamdUYlIyWUt0QnVxSEZXaEo0?oc=5",
+   "cat": "Fed",
+   "source": "FXEmpire",
+   "when": "2026-11-27T14:47Z"
+  },
+  {
+   "title": "Has Gold found a bottom, or is this a short-term bounce? - FXStreet",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPNXlpSmc4c3NfcGFGbGxGVHFYMVpjMXZuMHhGOThtR2I2d0JMMW5mSkJqY0VIaWlIOVpsRXJDVElpOFlPcVRZWjJobThjVE1GRDdQam85MWJzQUhVWlhhNlZuVWRHUy1LOXBvZUFOQmZ4QUxoaU5vR0VvMFEtalN0MnFQNTlZTlRUb19RMGk0YzNPLV8wSGZJdm1xYw?oc=5",
+   "cat": "Fed",
+   "source": "FXStreet",
+   "when": "2026-11-27T14:45Z"
+  },
+  {
+   "title": "Investors buy the dip as gold price drop spurs ETF inflows - Mining.com.au",
+   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNLVZWbnk5cXZFVmphVXlXMUN0NWFac0ppeWhKYUNKaXBnV3Y1MW5JVTBJaVk0aHhsdk9vNUJWT1NHQlJLZDBJZ1kxdGJhX1labzJhNnpyaHA4SFFLM1RCMTB4WXpqZFIxMEkyWXpGRW1wblVxMFEtaFl1UFM0aFh2LW1UM0JYWTNC?oc=5",
+   "cat": "ETF flows",
+   "source": "Mining.com.au",
+   "when": "2026-11-27T13:52Z"
+  },
+  {
+   "title": "Gold rebounds after sharp sell-off as brighter stock market sentiment supports precious metals - MarketPulse",
+   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQQ2NEVUNyeHdLN0h0S2dtVVVQSjVUaVFjSTRnVEktQ1RqQTdKSzVFRGF5RUZfZldvc1ZNQThlZURicE1PM3NHT0ZQNGhuZ3V0TnNOQXY1ZnN6WmwxWVpHazNMUnlHc1BZWnN4eTlDU1puMkhNZ0dwRzN3VUtnY0I2VkRrX2pid0pUcDFXR0hvTEhJa2h5TWJYUmw2SlF6YWlwTUZHS0JOUEhHcVdqSFEydDE3YkZXd3ZZT01obHZ6dGRrTTRIUGptNjNyaw?oc=5",
+   "cat": "Fed",
+   "source": "MarketPulse",
+   "when": "2026-11-27T13:27Z"
+  },
+  {
+   "title": "Gold rebounds from 15-month low but Fed risks linger - www.tmgm.com",
+   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxON3JHUjVmckxtUGhEZWVJUWh4M1FpaEg2LVZHcjN2dUhEa1FRY21ubWhKXzZYdUpXbWxBSndScjFtVXBZM21CY3ZTR1BCUDRJY19ienZlb09zUTRsUmpmWVpaUEZLX3JNQ1Y3NzFrcGVlcGtVOUpYazdwNE9vY0ktMmZ6ZENBNkxzQmJnMEpOTmtSaURWS2xZcUE3QmptWFYxOVFoLXNTTGpPZVQyTXZLWGZ0Q290aU5oYXc?oc=5",
+   "cat": "Fed",
+   "source": "www.tmgm.com",
+   "when": "2026-11-27T12:03Z"
   },
   {
    "title": "Gold price rebounds above $3,660 as tech stocks recover despite Fed rate hike fears - Equiti Global",
-   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNVXpPQlItZUpEc0MwQU1MN1pacjNSU0l0WkNfbWt3b1gtRWI1ay1ydUJLSEZCX0VyalNEQVhnTXBmay1QZ1ZOMmpJbFRXZC14d2Y1QmdBV3p0cWdHVkx3cURKb290b2tkSXZfOEVaZW5YNTZMeWJxTHFMb1oteG0yZENfeENoQWVKNlBmdGZPeXhuVlNRelBfeWgxcEFiQm4xZlh5TEdR?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOX1E1Z0hiOTZsY0tQLTBJOTl2WUtPUnBGdHVEaXRtS19NbTdocVExc1dNbmZEaG15UzhPdXBBQ0dvdmE5VGZTM0hYcFR3Vnh5UWFIdlJzTmhTWE1SM2lXWEZMNmc3amUya01ybWtiRC02NkdqcDJKdW5ISzU4LWhjRWQ4d01ybmNaRUhNN1RoaVVWYXJGeFoyeDdaa3V1OW1aVTdwakdR?oc=5",
    "cat": "Fed",
    "source": "Equiti Global",
    "when": "2026-11-27T12:00Z"
-  },
-  {
-   "title": "Gold changed direction on the last day of the week! The critical threshold was exceeded - Haberler.com",
-   "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOcWtIUUZzOWxydlY3TzhiX1kwV3BTb2dVbm1fcTltOFZNQ0c5dDdmbGpYSGtxMVdDeUpRakpHSUVlTWJmWllMN0NDektRMXZBWDRSTXJ1ZGN1SXl5eExJSnNvYzNWV2RFcVgtWjlCbDRoc1pHR2xfTnRIQjhBNE1vcjlXdG56cDRmQVE?oc=5",
-   "cat": "Fed",
-   "source": "Haberler.com",
-   "when": "2026-11-27T11:54Z"
   },
   {
    "title": "Gold rallies above $3,650 as dollar eases, Red Sea risks rise and Fed hike bets persist - VT Markets",
@@ -429,11 +555,11 @@
    "when": "2026-11-27T10:45Z"
   },
   {
-   "title": "Gold Steadies as Fed Rate Path and AI Stocks Frame Volatile Week - Bloomberg.com",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQdjBId0RKMFpkWFQ3R3VMeVV3T0VOMEI5dzRuWWZaMGNLVFBtRXZoWjJlWHhsdXVqdGNYT2NNc3ctSU9zdXpCR3ZaSXFENDhwQ1BQa1RqV01palJ3LWcxOWFnRXZFRm40NGRTaU9XYU9yOGF2WXAtV0lxOEdDcWZmSUxfYlZfZENjV3JUX0k5YmstSkk3V1ZWVWpkR1VjdDNzdkF6ZGxSNXpOZ1AxZmlGNThJTE0zUQ?oc=5",
+   "title": "Gold Climbs Above $3,670 as Precious Metals Rally Following Recent Sell-Off - Yahoo Finance UK",
+   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBLbnZVeUV4bkFvVkRJRHNxY0tQVDNZSXNhYmFSemFCZUJDVmN2OFJnWmtaYWNUQTNaRzhfR2x1ZU1uR2NKV2NzNUFacU1qRDAyc3dndEZva2I5UVpVZG50NXdtNlJiUF9IM09QbkQycDhHMTRTUVI0NG1XN3Y?oc=5",
    "cat": "Fed",
-   "source": "Bloomberg.com",
-   "when": "2026-11-27T10:22Z"
+   "source": "Yahoo Finance UK",
+   "when": "2026-11-27T10:17Z"
   },
   {
    "title": "Gold Surges 3% as Precious Metals Extend Recovery From Recent Lows Despite Fed Rate Hike Expectations - Yahoo Finance",
@@ -443,11 +569,25 @@
    "when": "2026-11-27T10:15Z"
   },
   {
+   "title": "Gold and Silver Price Forecast: Silver Leads Rebound as Ratio Falls - FXEmpire",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNbTNvNmdrVlhUYXQtcFBkNTlSSEFMQjNfRkl1STktMTE4VDBiXzJIY0U1RTBCZFBCNGhlbmVScG1vM2FSR25ld05RejhzeDVkOTNyb05fT1Q3S1ljZ2UzeE1XMk1FWU5ldGwxSng4VVVocXctRjk1R0NMTlRqbEdqZE1PQUR5MkZ3UGNGZzFFaXJPd00tMEIxdkM5Z0NabVlkZE13SGdNLS1qMy1OdDNjMnlSeElUQ0xL?oc=5",
+   "cat": "Fed",
+   "source": "FXEmpire",
+   "when": "2026-11-27T09:45Z"
+  },
+  {
    "title": "Gold prices steady, set for modest weekly gains - سانا",
    "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE53ZVRqWS1YUEpQclh5WHozdEkwcmxoTVgzajk1R0dCSndhaDY4UXFLRzRmZHN6UXVWbko4T3dxYkgwRmNQaVo4OWQtWGU?oc=5",
    "cat": "Fed",
    "source": "سانا",
    "when": "2026-11-27T09:42Z"
+  },
+  {
+   "title": "Shafaq News..Gold prices climb as US holiday eases selloff - شفق نيوز",
+   "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPR1dGNlpIekpzV2c4YndKQlFrck9jQ0VnN20wR1FIanlwaVg3YXNEdU5jMU9IclhYTnBhOTQ2bUREbEtMaW8tdkdORVN4aUJiY2QyTjMtZEZiWno5UUwwd0UxNDlRbzRrYzVhRmVnaGhHMmJXMF9aZllQZHVQS204bA?oc=5",
+   "cat": "Fed",
+   "source": "شفق نيوز",
+   "when": "2026-11-27T09:31Z"
   },
   {
    "title": "Gold Jumps to $3,600 and Silver to $43 as Tech Selloff Eases - BeInCrypto",
@@ -457,151 +597,11 @@
    "when": "2026-11-27T09:19Z"
   },
   {
-   "title": "Gold rebounds more than 3% from one-year low, driven by cooling European inflation and physical buying - Moomoo",
-   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOSW5ZaDBJQkZKTnZwbGU4UXpBZXpXUGcyU2ZZdUxKVkNMbUJTUnpzTG9zTFJHWXdfTGloM0NXVkNYZWZmbkM3eGt2TU5YeXprYXZlMnZXSUF2OUxDNnZKRlJvSDBGVktCdVlNUDZ6LVFiZmM2dnlmcThZSEVPOUQ3R3BqTVZkZVhBNVJCNlc0QzE5dzBXajRrOEVn?oc=5",
-   "cat": "Fed",
-   "source": "Moomoo",
-   "when": "2026-11-27T09:08Z"
-  },
-  {
-   "title": "Gold vs silver: Precious metals prices crashed and rebounded - which of them could deliver better returns in 2027? - Livemint",
-   "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxPUVpqWC1QeGFGN2xlRHRmd0xpUUNBc2tsM2dwUE5ONmdfQlFYNktIWi1RMm11akhBVWs4b01VSXNzc1R4MWlvWEM5eHpKRGsySWhFSHFuX0ZTMGZTNlZyOERrZ3NWVkstR2U1Z2h0bUpFR2VCOHZlNWNlT1lQRU52SzZLcjJrVE5KeHlncEhIOFhsMnMzdlNYZEhzbkFCRU8yM3p1SUxaSk1VVkdnTURDdUF5TlFTUUpiZkxaaHZWcEhrMHp6YVJqX2RNdWg5YmhkSFZXaW1DeWNMd21HTDR6VHFYMm1OQ2wyNzdfakhHTjg5U1pKZGhuSU1iMnZrZXF5WW1DVNIBigJBVV95cUxNWVlwSUJRaFByakRGSlJ2QjR4WGUzNjVjcFp2NFE1Qy14d3g2QTBaaUtTMjJFNVJ6eWdtQ1NLYWNTdUJfYWJTV0NrTnAtOVBRN1U5LTlMc0w2YWtyVnYybzBZU0x4LUdENk95ZnJIc0pIcEVGSkxuZFN1MUdWSkFnbV85RkFaRmRRc1hRaGx0Yms3ZHNSb0J2OFc3eEpGVUVpZkRXWFNPN1hfTzQ2LThkRTI2eFJ5NWhaNFptdjhuQjlMOENaMzQ0NE05QlJNX2J0R2lmcmhib2JtWUgxblAyMTBRVjZtTEpqdnJ4U0t3OURDYUI5a3hEYzlVcTg3WWpzRWJiT1ZUVEo2QQ?oc=5",
-   "cat": "Macro",
-   "source": "Livemint",
-   "when": "2026-11-27T08:54Z"
-  },
-  {
    "title": "Gold climbs closer to weekly high, around $3,680 as bulls shrug off Fed hike bets - FXStreet",
    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPamtYbENVdE5uTmk1WVkwWWFWMVNBb21aVjJJUVNfclgwOXJ6OVZyeGczSG9HUVFHVEJsMDVlTXlxUE00a05rck4yakMzS0lVWV9uLVpjeE42el9jbDJzcS1qUFdnX2FOd0pNX19hdTNrb0ZVVkhuNFBPSWptbU5uVzl2WFlrVV9SX1NETXRSbnN6OGYwLVFYa1hFUXBGaVhIeDVvNTdMbEVFNHJpQjVQVm56c05BYzVhSkk1eG1lWEtEakk?oc=5",
    "cat": "Fed",
    "source": "FXStreet",
    "when": "2026-11-27T08:46Z"
-  },
-  {
-   "title": "Gold rises as rebound in tech stocks offsets rate-hike concerns - Moneyweb",
-   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQV1hOTUc0M2dreUhFYjFSanI5ZmRLWXBobGthakdDVk45OUN1RTRqU21tX2RNT09CU0MteVJ4RmU4WWlRMG0wV0xlckxqdWhWNEY0TmpwejZVMGZ3emVLckp2Z1FLdHZZR2xoOFRMaGVrT0czV2tONUdNVFBiM1gwbVR0VWp5YWlzeUJxNjE5MngzdkVjRl9rWmViUmNSZl9o?oc=5",
-   "cat": "Fed",
-   "source": "Moneyweb",
-   "when": "2026-11-27T08:30Z"
-  },
-  {
-   "title": "Gold Price Falls Below $3,500 Amid Fed Rate Hikes and Downtrend - KuCoin",
-   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPckhrSzUzNEI2WE11VWFTem9na2pSTjNSN3BxUFhrTld0X2hyWU5MRWpTS2hMemZucVZXcXBYb2VmeU1VUE5mT1E5RkpBbjZVS1RTa1RTMXcwQTZVM3pvVkR6X2tQcTNUbDFZM1Ria3FaTGFta1lUSVZ4amFHblBjSDdfOC1pUnF3Y092b01TMmlId3VpcnNIREVsRTg?oc=5",
-   "cat": "Fed",
-   "source": "KuCoin",
-   "when": "2026-11-27T08:14Z"
-  },
-  {
-   "title": "Gold price forecast: Fed rate hike in December may limit recovery to ₹1.30 lakh per 10 grams by 2026-end, says expert - Livemint",
-   "link": "https://news.google.com/rss/articles/CBMijwJBVV95cUxNSS1wSFJjclpDQzhXOXBYY2R0UTMxLTNVemdRRlAxaF9SME9weWNvQks3a0dhTER3Y1dMd25XX1AxMXlkOWZscV9HQlctUFV0bjJubzNvTDIwX1JjaG4wOFk0aDNQRDMwQVNzSXVvU0xNZDBrYlZqUlhyeHB4SzJoLXAxakc2dDg4MEFlX0RsUkhTWFhha21fUkZJdUNNZGpuUWptVFpQUHdxb19Nd3ZWdl9Sb2VvQUZBWk5jY2xVbVhQRDBqSlhXNHVFZkdydDNJTEZldkstWUtWSGN5Skl6RGlkR0NNV2Q2MzE5Z1hONnhRM0hfX28wSEJMTmFDczlsakJFRzdTc21TX3FxRERN0gGUAkFVX3lxTE1FVVNONG9GZlJqSVBzaEJWcXo2bFhBSFc4WEUyLWszZlhSeS1YSTlTYm9WUEZrbEtXVTlxcnVNOUtXd2lab2ZLdm1RTGxDWkNCX1RpMWFGeGp5ejlXRjJ3VV9yS1VJcmlvdlRjSVc1S0c3MVdDYnByNW11WFhDdlNfZVlMbHpGVU9sajJOdkZUWXRiLUotd3llMF9QNDhmNTRfYWpBTGxSYXBjT3U5endNTlFBeERELTlmcjg5TFUybWdjZjJyZE1sbmJtd1J5WUFzSFIyYk9wLWVBZU43dWpCeEJoTEo0M0U0V0U5SXFKSmxhRGJ6M3l0cXhrN2dpWjM5X3ZGZi1DVndaUUZVQV9YeXZxYw?oc=5",
-   "cat": "Fed",
-   "source": "Livemint",
-   "when": "2026-11-27T08:13Z"
-  },
-  {
-   "title": "Fed Rate Hike Doubts: Why Some Analysts Warn Markets Could Crack Before Dec. 9 - Around Prague",
-   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPa0oteHBwWTY2aUVjRVhGb3JqNkpsZHJBUm5aUEE5X2dUODdYRDlDS0JyWkluQUdKVU1BNmtWT1FWck9aOGVwODE5dzRuMW8xaVhYRm05MTFGa3VwNDd3RHQydjlMeEdVMFE1cGpONzdqUmdMemxmTjhLZC1kWnVCR21jb3VVVUpxMXVsZFRrRlVQY3J3STd0cThUMlFvdTBGajdmZ1EzTFJReWVwZEtIQw?oc=5",
-   "cat": "Fed",
-   "source": "Around Prague",
-   "when": "2026-11-27T08:10Z"
-  },
-  {
-   "title": "Gold Price Reclaims $3,600 Level; Hong Kong Gold Stocks Rally for Second Day, Lingbao Gold Surges Nearly 11% - BigGo Finance",
-   "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBNVDJidG1HTEdEY1UxdjlmczZ6VGVJSmVUOUpvTFc5c1hjRUY3bm82eGxxUUxlMVkzU3Rsd0taWU4yRkJYV0ppdElVU1F5NVNxZmsxUUpNRXZsd2MwRGZRWU5nVEpCSkxFSFhnZ0FrcEFxeVUxR3c?oc=5",
-   "cat": "Fed",
-   "source": "BigGo Finance",
-   "when": "2026-11-27T07:36Z"
-  },
-  {
-   "title": "Gold Climbs Over 2% As US Holiday Trading Eases Market Pressure - Forbes Middle East",
-   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPZEFPSUcwaVN2TjZwallqLV9ocW1tYzZHa24wRHlSRzZpbVRRUmQ3bnZfYXdPMDl3N1o3dmQ4YWU0SFk4VXFQVHo0SWZ2dEgyMm5ldWZ3Q2NqQXl0YnZqWEdiSFJZS0R4ak9zMTBtUGwtcVhlbW5CNmJfdnZhd2N0Y2d2NmVFRVlCbE50cnVnNmNwenNLUkNXa3RLbHFwSEE2RW9fdg?oc=5",
-   "cat": "Fed",
-   "source": "Forbes Middle East",
-   "when": "2026-11-27T07:26Z"
-  },
-  {
-   "title": "Gold Price Rises Amid Dollar Weakness and Geopolitical Tensions - KuCoin",
-   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNMTVwTzVpUUlPRlRJc3FOUnRNVjg1TnBTc0dnMmN1aG04eEUwUk1vZ0QyWGIzLWVKVDRNZGNzTUJvLU9IQzNOVU9PRGc1cTVZNXRoRGF2dUNsRVBlMkxqTTBtVk1yc2dSSERGX1I4T3RuRlNzUC00S0xMOXBQaEtEZmpzcVRhdllpb3FkblNiRkxob3lUUTFHMGZPbWg?oc=5",
-   "cat": "Fed",
-   "source": "KuCoin",
-   "when": "2026-11-27T07:15Z"
-  },
-  {
-   "title": "U.S. PCE inflation remains stubbornly high, and renewed conflict in the Middle East raises questions: how far can gold's rebound go? - Moomoo",
-   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOMkE5WW1nUTRjNDR5dWdHOV82X3RUcWtqR3ZsZ3dnZTBmX2hXQkh1SmdOTWxYaTZQU3ZURjhaVVNCbFpmRzlDRGVnaENzMkwxeVl0S2FZMVZYLXIzclNJY2swRkJYVHNXWWx3aXlDSUVhSV9KLW91QnJjdG5GNUhBVG5BR2JsWTZmM00yb0FSRGJORnR3bmNZc2xiMS1UNGtwV1V4TmNHajJWVG5j?oc=5",
-   "cat": "Fed",
-   "source": "Moomoo",
-   "when": "2026-11-27T07:13Z"
-  },
-  {
-   "title": "Gold, Silver Prices Rebound: Yellow Metal Rates Jump By Rs 2,700, White Metal By Over Rs 7,900 - NDTV Profit",
-   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQSlJaRF9ZWWJJYnZDMHJTM3JoZHdobm9WcFY0QjZualctRXg5eDVpbklwc2xUYm1RdGRlNUpQS3lmOXRWd3RQX3J6ZnIyQVdrZEcxQ3NvSTdaZU9HNFlRcUF5U3FBbWpOVTdkQllWUGF1U3VaSEtYOG1xWWJJeGtidlYwVTNSRVZTZ1d2TFFxbTBNM214QTRiSGdXR1BkdHVQTzRkV2k1U1V6YVNyendpNlJESUNYaHVDbmc4SmpLZW5QSVFOMGtMQnhpblZwZV9q0gHYAUFVX3lxTE94YTZ3Qzl4Rk12MEtWeWRzSTI2Tnc3RWdNOWdpd3JBbTZBTnkxSjJQbmgxanZGTTZXNm9PZTlqb2FMOEtUZWVZdkprODd1cThXWUhVY0VPWTFRN3F5NGdBYzE1Qmo4dE54aHJlSktISURxQ3dTcFgtTlU3dmFQQVVqUk5WUlppMEptcG10Z2d2WkctN05BMnREeWI0cHZkQ3ozc0VNazlQSl9DYVJTRms3WUZaNElSTGpYOGc2WDRJNjhFeGI3MC1oU2VQMFRQbzVneU9Sa2pWMg?oc=5",
-   "cat": "Macro",
-   "source": "NDTV Profit",
-   "when": "2026-11-27T07:11Z"
-  },
-  {
-   "title": "Gold Rebounds 1.9% to $3,633 as Traders Price In a December Fed Hike - BigGo Finance",
-   "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFA2YXdzU3dic3VrTFg0RjBteW9idGRxY0tnbXlaYmVKZDJ6NWZiMUNEbGw3VEtLcjJ5NUhuRWRVeEdpU3k4NU9EOUIyek1hTTJtQTdKOFZuZ2R0YjROTnRTdl9tck12UjFtSHhiNjk0TUFxbmVhTkE?oc=5",
-   "cat": "Fed",
-   "source": "BigGo Finance",
-   "when": "2026-11-27T07:05Z"
-  },
-  {
-   "title": "Gold (XAUUSD) & Silver Price Forecast: China Keeps Buying, Can Gold Clear $3,651? - FXEmpire",
-   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNbFBodk56bE1WZHpyVGF0UnRLR2h5eTBESVd0d0VmVzZENVRpX2RyMDlMdG5kbHkzYkpidWhheVNrNllfWlZLSUprOEU2elZHUEdJZUY1bkRfMFUzVUlzZWJPbmV3SDlQY3NoVVA2NXFMNlNFQmFIRS1MSk52SUo2SF9UUzdVUTNVZ0RxZ0RjS2xVMnAxSlBQcTM5SmgyQWVRbFk3VHl2T0ZKandHdGZUTzBfRmJsUTl3WV9XVXpMNUk?oc=5",
-   "cat": "Central banks",
-   "source": "FXEmpire",
-   "when": "2026-11-27T07:04Z"
-  },
-  {
-   "title": "Gram gold drifts away from 10,000-lira target: year-end forecasts cut to 6,000 lira - BigGo Finance",
-   "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBLLUFQdVZpa3cxZ0liQ1hzVmJ3SV9OTjdCaWl3QXBNbWg0TTc2Mkdsb1hzUjJVWDB6REVNQmhKaE9nY3VFTGxnc0JJcWRnSDRneHRNZVVqTEsxanFfRnU1M3E0TThMQ09RS1ZzUHlMekZPSWV0SGc?oc=5",
-   "cat": "Fed",
-   "source": "BigGo Finance",
-   "when": "2026-11-27T06:35Z"
-  },
-  {
-   "title": "Gold Price Crash: Could the 2026 Sell-Off Trigger a Prolonged Recovery? - TradingView",
-   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQUVI1YTNuMnFMT1BJNXdTOGZHa3BES3RxNDJtZnotOHQ5Zm0wdWxkeDdZQ1NkbnNIalFnZHJjWTFnSnRIb1kwSHI5RGJwV0k1aXlUSXFhaWcweW9lQ2p1Zk9xT3BFSTI1NmQ3VWhJYXJaRWdWazFoMThLUDBJR3htQ19JTi1hMHBsQkE0MGhjSm9MVHVTZTdOUTl0c1ZMVlpLMHF3R0V3Wkp1TDg1SjFrbXhveGxkdmtHVWs5M1N1T0xrRGpIb2hVMQ?oc=5",
-   "cat": "Macro",
-   "source": "TradingView",
-   "when": "2026-11-27T06:20Z"
-  },
-  {
-   "title": "Above $3,600: Gold recovery continues as USD softens; Fed bets call for caution among bulls - www.tmgm.com",
-   "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQUnEyb2g0MDJmdDh5ei1pdWxRb2FvNy1BbW95SVFFdHFlQnh1cFRrMzgwdENIODg4ejZpYmFIUFVmZ1BReHQ4SXpYczFoVHhBMDRYWTgxN1pEX2M4a2R2RW1KakNUMDMtWWJjcmhZSm5LYU40cjhTS2NiMWgtTzJRQjdpY3h1ZmZZZV9FaG5McnpydGI2eGwzVndXMkkxVmt1Y3lhTXFXMEQ3QlJfaTFINnlSSklWSmRtbW9HeU9yamViWER4ekhDTU1NS3p4cXBDbUdHVkNxN01TRWNNWHRRdW5tbw?oc=5",
-   "cat": "Fed",
-   "source": "www.tmgm.com",
-   "when": "2026-11-27T06:18Z"
-  },
-  {
-   "title": "Gold Holds Steady As Markets Brace For Fed Hikes - Finimize",
-   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNRHcwVkJaNXVDNThkZDJVQTFLOGZteWdEWkVGdG9VTFFOQjFlWUtVbDRHRkJvYTVobWUtNGNtbUdQdHJHajJjM1BpQ0JQRGV3UlpSbEhRX01hRVFSaXdLSXhoOUk5czdrQUR4ZWFnb3ROU0hOTVZTcFhLUFlyd1ctYXNMNA?oc=5",
-   "cat": "Fed",
-   "source": "Finimize",
-   "when": "2026-11-27T06:03Z"
-  },
-  {
-   "title": "Gold Rebounds Above $3,569 an Ounce as Fed Rate Bets Keep Bullion Swinging - BigGo Finance",
-   "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1tWUw5RUlkWE5qclN3U3JsN1dfVG1EclVIWmVjOWRocjZtdFNFb3FCSkxyeHVXUHY1YUU0V2ZFV2ktLXZMenJKdHBZN1JMNF9mUmEyS1Z4NlpINWoyQ1F3OHN3cmVVN2tXZEJhVWk1cnYteUt4Wnc?oc=5",
-   "cat": "Fed",
-   "source": "BigGo Finance",
-   "when": "2026-11-27T05:55Z"
-  },
-  {
-   "title": "Gold & Silver Price Update for Today, 27-Nov-2026 - TechJuice",
-   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5FRmM0cl8xSm15ZFRiZ3RiemphbVc0bWpCbTNKeG5ZOUhySTBKUHZKamVtcGlycWNxQ1k2bU5BODZtRnBZT3JMdGdiODJ5RXRnZXJMRU4tTzFsdUZHZ0tpdXNGV3VwaGRHTEo0R0JOb283aWZWOGxfUGlla0k?oc=5",
-   "cat": "Macro",
-   "source": "TechJuice",
-   "when": "2026-11-27T05:49Z"
-  },
-  {
-   "title": "It had hit a 14-month low! Gold is on the rise again - Haberler.com",
-   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQdVdvTVlValBEcXFqVzVCSnNyaHdzNTJrZzZVckNDY3YyRWxTdUZrZ1VKN1phdWVFbi1UcFhYOFZmaHJndUdPbUJoWWNnODdzdkgybUJKalZxb1g0bm9keDhHcEF4RUQ3NDZsX1dQcUhpODZCRHJoWUx1elY5ZDNSQjBMRQ?oc=5",
-   "cat": "Fed",
-   "source": "Haberler.com",
-   "when": "2026-11-27T05:44Z"
   }
  ],
  "series": {
@@ -665,7 +665,7 @@
    3651.4,
    3561.9,
    3535.8,
-   3696.8
+   3658.5
   ],
   "real_yield": [
    2.42,
